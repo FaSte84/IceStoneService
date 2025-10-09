@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IceCream, Truck, Clock, Shield, Phone, Mail, MapPin, Calendar, Package, Snowflake, CheckCircle } from 'lucide-react';
+import { IceCream, Truck, Clock, Shield, Phone, Mail, MapPin, Package, Snowflake, CheckCircle } from 'lucide-react';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -56,10 +56,11 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg">
-                Ghiaccio in busta per feste, bar e ristoranti
+                Produzione e confezionamento 
+                Distribuzione a domicilio
               </h2>
               <p className="text-xl mb-6 text-white">
-                Vendita diretta di ghiaccio alimentare a Modena, Mantova e provincia
+                Vendita diretta di ghiaccio alimentare a Mantova, Modena e provincia
               </p>
               <div className="space-y-3 mb-8 text-white">
                 <div className="flex items-center gap-3">
@@ -115,7 +116,7 @@ function App() {
               ideale per feste ed eventi privati, bar e locali notturni, ristoranti e catering, sagre, fiere e manifestazioni.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mt-4">
-              Operiamo con vendita diretta a Modena, Mantova e in tutta la provincia,
+              Operiamo con vendita diretta a Mantova, Modena e provincia,
               garantendo consegne rapide e puntuali per ogni esigenza.
             </p>
           </div>
@@ -155,7 +156,7 @@ function App() {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-cyan-500">
               <CheckCircle className="w-10 h-10 text-cyan-600 mb-3" />
               <h3 className="text-xl font-bold text-gray-800 mb-2">Ghiaccio Alimentare in Busta</h3>
-              <p className="text-gray-600">Disponibile in formati da 2 kg, 5 kg e su richiesta per quantità personalizzate. Vendita diretta a Modena, Mantova e provincia.</p>
+              <p className="text-gray-600">Disponibile in formati da 2 kg, 5 kg e su richiesta per quantità personalizzate. Vendita diretta a Mantova, Modena e provincia.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-blue-500">
               <CheckCircle className="w-10 h-10 text-blue-600 mb-3" />
@@ -226,7 +227,7 @@ function App() {
 
                 <div>
                   <label className="block text-gray-700 font-semibold mb-2">
-                    Distanza da Pegognaga (km)
+                    Distanza da Modena (km)
                   </label>
                   <input
                     type="number"
@@ -377,19 +378,99 @@ function App() {
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <MapPin className="w-12 h-12 text-cyan-600 mx-auto mb-3" />
                 <h3 className="font-bold text-gray-800 mb-2">Sede</h3>
-                <p className="text-gray-600">Pegognaga (MN)</p>
+                <p className="text-gray-600">Via C. Battisti, 8c, 46020 Pegognaga (MN)</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <Phone className="w-12 h-12 text-cyan-600 mx-auto mb-3" />
                 <h3 className="font-bold text-gray-800 mb-2">Telefono</h3>
                 <p className="text-gray-600">Francesco Cabitza</p>
-                <p className="text-cyan-600 font-semibold">[Inserire numero]</p>
+                <p className="text-cyan-600 font-semibold">[3534632562 - 3770890066]</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <Mail className="w-12 h-12 text-cyan-600 mx-auto mb-3" />
                 <h3 className="font-bold text-gray-800 mb-2">Email</h3>
-                <p className="text-cyan-600 font-semibold">[Inserire email]</p>
+                <p className="text-cyan-600 font-semibold">[info@icestoneservice.it]</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mappa */}
+      <section className="py-12 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">La nostra area di servizio</h2>
+          <div className="bg-white rounded-xl shadow-lg p-4 mb-8">
+            <div className="aspect-video w-full">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.0234363052193!2d10.854472600000002!3d44.9975594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x385bcf32251f933%3A0x15c6ba1b322f6f2!2sICE%20STONE%20SERVICE%202.0!5e0!3m2!1sit!2sit!4v1696789456789!5m2!1sit!2sit" 
+                width="100%" 
+                height="450" 
+                style={{ border: 0 }} 
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ICE STONE SERVICE 2.0 - Pegognaga (MN)"
+                className="rounded-lg"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-lg text-gray-700">La nostra sede a Pegognaga (MN) con servizio di consegna a Mantova, Modena e provincia</p>
+              <p className="text-gray-600 mt-2">Contattaci per verificare disponibilità e tempi di consegna nella tua zona</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Biglietto da visita */}
+      <section className="py-12 bg-black">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">Contattaci</h2>
+          
+          {/* Biglietto da visita stilizzato */}
+          <div className="bg-black border-2 border-cyan-400 rounded-xl p-8 mb-10 max-w-4xl mx-auto shadow-lg shadow-cyan-400/20">
+            <div className="text-center mb-6">
+              <h3 className="text-5xl font-bold text-cyan-300 mb-2">ICE STONE</h3>
+              <h4 className="text-3xl font-bold text-cyan-300 mb-4">SERVICE</h4>
+              <div className="text-white font-semibold space-y-1">
+                <p>PRODUZIONE E CONFEZIONAMENTO</p>
+                <p>DISTRIBUZIONE A DOMICILIO</p>
+                <p>GHIACCIO ALIMENTARE</p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              <div className="flex items-center justify-center">
+                <Phone className="w-6 h-6 text-cyan-400 mr-2" />
+                <span className="text-white font-bold">+39 353 463 2562</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <Phone className="w-6 h-6 text-cyan-400 mr-2" />
+                <span className="text-white font-bold">+39 377 089 0066</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <Mail className="w-6 h-6 text-cyan-400 mr-2" />
+                <span className="text-white font-bold">INFO@ICESTONESERVICE.IT</span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Informazioni di contatto aggiuntive */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div className="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+              <Phone className="w-12 h-12 text-cyan-400 mx-auto mb-3" />
+              <h3 className="font-bold text-white mb-2">Telefono</h3>
+              <p className="text-gray-300 text-xl">+39 353 463 2562</p>
+            </div>
+            <div className="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+              <Phone className="w-12 h-12 text-cyan-400 mx-auto mb-3" />
+              <h3 className="font-bold text-white mb-2">Telefono Alternativo</h3>
+              <p className="text-gray-300 text-xl">+39 377 089 0066</p>
+            </div>
+            <div className="bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow">
+              <Mail className="w-12 h-12 text-cyan-400 mx-auto mb-3" />
+              <h3 className="font-bold text-white mb-2">Email</h3>
+              <p className="text-gray-300 text-xl">INFO@ICESTONESERVICE.IT</p>
             </div>
           </div>
         </div>
