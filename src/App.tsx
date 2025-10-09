@@ -5,7 +5,6 @@ function App() {
   const [formData, setFormData] = useState({
     quantity: '',
     date: '',
-    freezerRental: 'no',
     address: '',
     distance: '',
     email: '',
@@ -60,12 +59,12 @@ function App() {
                 Ghiaccio in busta per feste, bar e ristoranti
               </h2>
               <p className="text-xl mb-6 text-white">
-                Fornitura professionale di ghiaccio alimentare a Pegognaga (MN) e dintorni
+                Vendita diretta di ghiaccio alimentare a Modena, Mantova e provincia
               </p>
               <div className="space-y-3 mb-8 text-white">
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5" />
-                  <span className="drop-shadow-md">Pegognaga (MN)</span>
+                  <span className="drop-shadow-md">Modena, Mantova e provincia</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5" />
@@ -85,15 +84,17 @@ function App() {
             </div>
             <div className="hidden md:block">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                <img src="/images/Immagine 2025-10-08 164801.jpeg" alt="Ghiaccio in busta" className="w-full h-auto rounded-lg mb-4 shadow-lg" />
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div className="bg-white/20 rounded-lg p-4">
-                    <div className="text-3xl font-bold">2kg</div>
-                    <div className="text-sm">Buste disponibili</div>
+                <div className="flex items-center justify-center mb-6">
+                  <Snowflake className="w-20 h-20 text-white" />
+                </div>
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <div className="bg-white/20 rounded-lg p-6 hover:bg-white/30 transition-all">
+                    <div className="text-4xl font-bold">2kg</div>
+                    <div className="text-sm mt-2">Buste disponibili</div>
                   </div>
-                  <div className="bg-white/20 rounded-lg p-4">
-                    <div className="text-3xl font-bold">5kg</div>
-                    <div className="text-sm">Buste disponibili</div>
+                  <div className="bg-white/20 rounded-lg p-6 hover:bg-white/30 transition-all">
+                    <div className="text-4xl font-bold">5kg</div>
+                    <div className="text-sm mt-2">Buste disponibili</div>
                   </div>
                 </div>
               </div>
@@ -114,8 +115,8 @@ function App() {
               ideale per feste ed eventi privati, bar e locali notturni, ristoranti e catering, sagre, fiere e manifestazioni.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mt-4">
-              Con sede a Pegognaga (Mantova), operiamo su tutto il territorio locale e limitrofo,
-              garantendo consegne rapide e puntuali.
+              Operiamo con vendita diretta a Modena, Mantova e in tutta la provincia,
+              garantendo consegne rapide e puntuali per ogni esigenza.
             </p>
           </div>
 
@@ -154,12 +155,12 @@ function App() {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-cyan-500">
               <CheckCircle className="w-10 h-10 text-cyan-600 mb-3" />
               <h3 className="text-xl font-bold text-gray-800 mb-2">Ghiaccio Alimentare in Busta</h3>
-              <p className="text-gray-600">Disponibile in formati da 2 kg, 5 kg e su richiesta per quantità personalizzate</p>
+              <p className="text-gray-600">Disponibile in formati da 2 kg, 5 kg e su richiesta per quantità personalizzate. Vendita diretta a Modena, Mantova e provincia.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-blue-500">
               <CheckCircle className="w-10 h-10 text-blue-600 mb-3" />
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Noleggio Congelatori</h3>
-              <p className="text-gray-600">Congelatori professionali per eventi e locali, disponibili per brevi e lunghi periodi</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Ghiaccio Tritato</h3>
+              <p className="text-gray-600">Disponibile anche ghiaccio tritato per cocktail e bevande speciali</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-cyan-600">
               <CheckCircle className="w-10 h-10 text-cyan-600 mb-3" />
@@ -220,18 +221,7 @@ function App() {
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 font-semibold mb-2">
-                    Noleggio congelatore? *
-                  </label>
-                  <select
-                    name="freezerRental"
-                    value={formData.freezerRental}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
-                  >
-                    <option value="no">No</option>
-                    <option value="yes">Sì</option>
-                  </select>
+
                 </div>
 
                 <div>
@@ -355,8 +345,8 @@ function App() {
               <div className="bg-gradient-to-br from-cyan-100 to-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <IceCream className="w-10 h-10 text-blue-700" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">Noleggio Congelatori</h3>
-              <p className="text-gray-600">Possibilità di noleggiare congelatori professionali</p>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Qualità Garantita</h3>
+              <p className="text-gray-600">Ghiaccio alimentare di alta qualità, prodotto secondo le normative vigenti</p>
             </div>
             <div className="text-center">
               <div className="bg-gradient-to-br from-cyan-100 to-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
