@@ -45,9 +45,12 @@ Note: ${formData.notes}
 
       // Per ora simulo l'invio email con un timeout
       await new Promise(resolve => setTimeout(resolve, 2000));
+      <a href="mailto:francesco.cabitza87@gmail.com?cc=stefano.fava@hotmail.it&subject=Preventivo%20personalizzato&body=Buongiorno,%0D%0A%0D%0Asono interessato a ricevere un preventivo per...">
+        Contattaci
+      </a>
       
-      console.log('Email inviata con successo:', templateParams);
-      alert('Richiesta preventivo inviata con successo! Ti risponderemo entro 24 ore.');
+      /*console.log('Email inviata con successo:', templateParams);
+      alert('Richiesta preventivo inviata con successo! Ti risponderemo entro 24 ore.');*/
       
       // Reset del form
       setFormData({
@@ -166,7 +169,7 @@ Note: ${formData.notes}
               ideale per feste ed eventi privati, bar e locali notturni, ristoranti e catering, sagre, fiere e manifestazioni.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mt-4">
-              Operiamo con vendita diretta su tutto il territorio di Mantova e provincia, e Modena e provincia.,
+              Operiamo con vendita diretta su tutto il territorio di Mantova e provincia, e Modena e provincia,
               garantendo consegne rapide e puntuali per ogni esigenza.
             </p>
           </div>
