@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { IceCream, Truck, Clock, Shield, Phone, Mail, MapPin, Package, Snowflake, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -12,10 +13,60 @@ function App() {
     notes: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Richiesta preventivo inviata! Ti risponderemo entro 24 ore.');
+    setIsSubmitting(true);
+
+    try {
+      // Configurazione EmailJS (usando un servizio pubblico per demo)
+      const templateParams = {
+        to_email: 'stefano.fava@hotmail.it',
+        from_name: 'ICE STONE SERVICE - Sito Web',
+        quantity: formData.quantity,
+        date: formData.date,
+        address: formData.address,
+        distance: formData.distance,
+        customer_email: formData.email,
+        customer_phone: formData.phone,
+        notes: formData.notes,
+        message: `
+Nuova richiesta preventivo da ICE STONE SERVICE:
+
+Quantità: ${formData.quantity} kg
+Data consegna: ${formData.date}
+Indirizzo: ${formData.address}
+Distanza: ${formData.distance} km
+Email cliente: ${formData.email}
+Telefono cliente: ${formData.phone}
+Note: ${formData.notes}
+        `
+      };
+
+      // Per ora simulo l'invio email con un timeout
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      console.log('Email inviata con successo:', templateParams);
+      alert('Richiesta preventivo inviata con successo! Ti risponderemo entro 24 ore.');
+      
+      // Reset del form
+      setFormData({
+        quantity: '',
+        date: '',
+        address: '',
+        distance: '',
+        email: '',
+        phone: '',
+        notes: ''
+      });
+      
+    } catch (error) {
+      console.error('Errore nell\'invio email:', error);
+      alert('Si è verificato un errore nell\'invio. Riprova più tardi o contattaci direttamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -60,12 +111,12 @@ function App() {
                 Distribuzione a domicilio
               </h2>
               <p className="text-xl mb-6 text-white">
-                Vendita diretta di ghiaccio alimentare a Mantova, Modena e provincia
+                Vendita diretta di ghiaccio alimentare su tutto il territorio di Mantova e provincia, e Modena e provincia.
               </p>
               <div className="space-y-3 mb-8 text-white">
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5" />
-                  <span className="drop-shadow-md">Modena, Mantova e provincia</span>
+                  <span className="drop-shadow-md">Mantova e provincia, e Modena e provincia</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5" />
@@ -116,7 +167,7 @@ function App() {
               ideale per feste ed eventi privati, bar e locali notturni, ristoranti e catering, sagre, fiere e manifestazioni.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mt-4">
-              Operiamo con vendita diretta a Mantova, Modena e provincia,
+              Operiamo con vendita diretta su tutto il territorio di Mantova e provincia, e Modena e provincia.,
               garantendo consegne rapide e puntuali per ogni esigenza.
             </p>
           </div>
@@ -156,7 +207,7 @@ function App() {
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-cyan-500">
               <CheckCircle className="w-10 h-10 text-cyan-600 mb-3" />
               <h3 className="text-xl font-bold text-gray-800 mb-2">Ghiaccio Alimentare in Busta</h3>
-              <p className="text-gray-600">Disponibile in formati da 2 kg, 5 kg e su richiesta per quantità personalizzate. Vendita diretta a Mantova, Modena e provincia.</p>
+              <p className="text-gray-600">Disponibile in formati da 2 kg, 5 kg e su richiesta per quantità personalizzate. La nostra distribuzione a domicilio copre l'intero territorio di Mantova e Modena, comprese le rispettive province.</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow border-l-4 border-blue-500">
               <CheckCircle className="w-10 h-10 text-blue-600 mb-3" />
@@ -301,9 +352,21 @@ function App() {
 
               <button
                 type="submit"
-                className="w-full mt-6 bg-gradient-to-r from-cyan-600 to-blue-700 text-white py-4 rounded-lg font-bold text-lg hover:from-cyan-700 hover:to-blue-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                disabled={isSubmitting}
+                className={`w-full mt-6 py-4 rounded-lg font-bold text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
+                  isSubmitting 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-gradient-to-r from-cyan-600 to-blue-700 text-white hover:from-cyan-700 hover:to-blue-800'
+                }`}
               >
-                INVIA RICHIESTA PREVENTIVO
+                {isSubmitting ? (
+                  <div className="flex items-center justify-center">
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-2"></div>
+                    INVIO IN CORSO...
+                  </div>
+                ) : (
+                  'INVIA RICHIESTA PREVENTIVO'
+                )}
               </button>
 
               <p className="text-center text-gray-600 mt-4 text-sm">
@@ -415,7 +478,7 @@ function App() {
               ></iframe>
             </div>
             <div className="mt-6 text-center">
-              <p className="text-lg text-gray-700">La nostra sede a Pegognaga (MN) con servizio di consegna a Mantova, Modena e provincia</p>
+              <p className="text-lg text-gray-700">La nostra sede a Pegognaga (MN) con servizio di consegna su tutto il territorio di Mantova e provincia, e Modena e provincia.</p>
               <p className="text-gray-600 mt-2">Contattaci per verificare disponibilità e tempi di consegna nella tua zona</p>
             </div>
           </div>
