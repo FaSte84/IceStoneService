@@ -6,7 +6,6 @@ function App() {
     quantity: '',
     date: '',
     address: '',
-    distance: '',
     email: '',
     phone: '',
     notes: ''
@@ -26,7 +25,6 @@ function App() {
         quantity: formData.quantity,
         date: formData.date,
         address: formData.address,
-        distance: formData.distance,
         customer_email: formData.email,
         customer_phone: formData.phone,
         notes: formData.notes,
@@ -36,7 +34,6 @@ Nuova richiesta preventivo da ICE STONE SERVICE:
 Quantità: ${formData.quantity} kg
 Data consegna: ${formData.date}
 Indirizzo: ${formData.address}
-Distanza: ${formData.distance} km
 Email cliente: ${formData.email}
 Telefono cliente: ${formData.phone}
 Note: ${formData.notes}
@@ -57,7 +54,6 @@ Note: ${formData.notes}
         quantity: '',
         date: '',
         address: '',
-        distance: '',
         email: '',
         phone: '',
         notes: ''
@@ -102,23 +98,23 @@ Note: ${formData.notes}
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-cyan-700 to-blue-800 text-white py-16 md:py-24" style={{backgroundImage: 'url("/images/Sfondo.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'overlay', position: 'relative'}}>
+      <section className="bg-gradient-to-r from-cyan-700 to-blue-800 text-white py-16 md:py-24" style={{backgroundImage: 'url("/images/SfondoCHATGPT.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundBlendMode: 'normal', position: 'relative'}}>
         {/* Overlay scuro per migliorare la leggibilità */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white drop-shadow-lg">
-                Produzione e confezionamento 
-                Distribuzione a domicilio
+                Produzione e Confezionamento 
+                Distribuzione a Domicilio
               </h2>
               <p className="text-xl mb-6 text-white">
-                Vendita diretta di ghiaccio alimentare su tutto il territorio di Mantova e provincia, e Modena e provincia.
+                Vendita diretta di ghiaccio alimentare su tutto il territorio della provincia di Mantova e della provincia di Modena.
               </p>
               <div className="space-y-3 mb-8 text-white">
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5" />
-                  <span className="drop-shadow-md">Mantova e provincia, e Modena e provincia</span>
+                  <span className="drop-shadow-md">Mantova e provincia, Modena e provincia</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-5 h-5" />
@@ -169,7 +165,7 @@ Note: ${formData.notes}
               ideale per feste ed eventi privati, bar e locali notturni, ristoranti e catering, sagre, fiere e manifestazioni.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mt-4">
-              Operiamo con vendita diretta su tutto il territorio di Mantova e provincia, e Modena e provincia,
+              Operiamo con vendita diretta su tutto il territorio di Mantova e provincia, Modena e provincia,
               garantendo consegne rapide e puntuali per ogni esigenza.
             </p>
           </div>
@@ -271,24 +267,6 @@ Note: ${formData.notes}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
-                  />
-                </div>
-
-                <div>
-
-                </div>
-
-                <div>
-                  <label className="block text-gray-700 font-semibold mb-2">
-                    Distanza da Pegognaga (km)
-                  </label>
-                  <input
-                    type="number"
-                    name="distance"
-                    value={formData.distance}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
-                    placeholder="Es: 15"
                   />
                 </div>
 
@@ -505,7 +483,7 @@ Note: ${formData.notes}
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <Mail className="w-12 h-12 text-cyan-600 mx-auto mb-3" />
                 <h3 className="font-bold text-gray-800 mb-2">Email</h3>
-                <p className="text-cyan-600 font-semibold">[info@icestoneservice.it]</p>
+                <p className="text-cyan-600 font-semibold">[francesco.cabitza87@gmail.com]</p>
               </div>
             </div>
           </div>
