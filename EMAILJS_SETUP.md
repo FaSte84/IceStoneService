@@ -11,7 +11,7 @@
 2. Clicca "Add New Service"
 3. Scegli il tuo provider email (Gmail, Outlook, Yahoo, ecc.)
 4. Segui le istruzioni per collegare il tuo account email
-5. Annota il **Service ID** generato 
+5. Annota il **Service ID** generato service_s60nem4
 
 ### 3. Crea un template email
 1. Vai su "Email Templates"
