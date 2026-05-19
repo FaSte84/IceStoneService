@@ -20,9 +20,14 @@ export default function IceDeliveryHomepage() {
             <a href="#contatti" className="hover:text-white transition">Contatti</a>
           </nav>
 
-          <button className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition">
+          <a 
+            href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
+          >
             Ordina Ora
-          </button>
+          </a>
         </div>
       </header>
 
@@ -54,9 +59,14 @@ export default function IceDeliveryHomepage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition">
-              Ordina Ora
-            </button>
+          <a 
+            href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
+          >
+            Ordina Ora
+          </a>
 
             <button className="border border-white/30 px-8 py-4 rounded-full text-lg hover:bg-white hover:text-black transition">
               WhatsApp
