@@ -1,11 +1,70 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function IceDeliveryHomepage() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          {/* Menu Tendina */}
+          <div className="relative">
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="flex items-center gap-2 text-white hover:text-cyan-400 transition"
+            >
+              <svg 
+                className="w-6 h-6" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <span className="hidden md:inline font-semibold">Menu</span>
+            </button>
+
+            {/* Dropdown Content */}
+            {menuOpen && (
+              <div className="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
+                <a 
+                  href="#prodotti" 
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Prodotti
+                </a>
+                <a 
+                  href="#eventi" 
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Eventi
+                </a>
+                <a 
+                  href="#servizi" 
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Servizi
+                </a>
+                <Link 
+                  to="/contatti" 
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Contatti
+                </Link>
+              </div>
+            )}
+          </div>
+
           <div className="flex items-center gap-4">
             <Link to="/">
               <img 
@@ -16,13 +75,6 @@ export default function IceDeliveryHomepage() {
             </Link>
             <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE</h1>
           </div>
-
-          <nav className="hidden md:flex gap-8 text-sm text-zinc-300">
-            <a href="#prodotti" className="hover:text-white transition">Prodotti</a>
-            <a href="#eventi" className="hover:text-white transition">Eventi</a>
-            <a href="#servizi" className="hover:text-white transition">Servizi</a>
-            <Link to="/contatti" className="hover:text-white transition">Contatti</Link>
-          </nav>
 
           <a 
             href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare."
@@ -70,15 +122,6 @@ export default function IceDeliveryHomepage() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
-            >
-              Ordina Ora
-            </a>
-
             <a 
               href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare."
               target="_blank"
