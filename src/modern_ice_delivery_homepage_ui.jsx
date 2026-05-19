@@ -57,6 +57,13 @@ export default function IceDeliveryHomepage() {
             SENZA GHIACCIO
           </h1>
 
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-400/20 to-cyan-500/20 border border-cyan-400/30 rounded-full px-6 py-2 mb-6">
+            <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+            <p className="text-cyan-300 font-semibold text-sm md:text-base">
+              Freddo garantito, 7 giorni su 7
+            </p>
+          </div>
+
           <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             Produzione, confezionamento e trasporto di ghiaccio professionale
             su tutto il territorio di Mantova e Modena.
