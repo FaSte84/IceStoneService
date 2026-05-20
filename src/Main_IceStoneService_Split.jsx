@@ -5,7 +5,7 @@ export default function Main_IceStoneService_Split() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-black text-white font-sans">
+    <div className="relative h-screen w-full overflow-hidden bg-black text-white font-sans">
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
