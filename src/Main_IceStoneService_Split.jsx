@@ -1,22 +1,31 @@
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export default function Main_IceStoneService_Split() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black text-white">
-      {/* Global Brand Title */}
-      <div className="pointer-events-none absolute left-1/2 top-8 z-50 -translate-x-1/2 text-center">
-        <h1 className="text-lg font-black uppercase tracking-[0.25em] text-cyan-200 drop-shadow-[0_0_25px_rgba(103,232,249,0.35)] md:text-2xl whitespace-nowrap">
-          ICE STONE SERVICE
-        </h1>
+    <div className="relative min-h-screen w-full overflow-hidden bg-black text-white font-sans">
+      {/* Navbar */}
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
+        <div className="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
+          <div className="flex items-center gap-4">
+            <img 
+              src="/images/Logo_icestone.png" 
+              alt="IceStone Service Logo" 
+              className="h-12 md:h-16 object-contain"
+            />
+            <div className="text-center">
+              <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE</h1>
+              <p className="text-xs uppercase tracking-[0.45em] text-zinc-300 md:text-sm">
+                Puntualmente Sottozero
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
 
-        <p className="mt-3 text-xs uppercase tracking-[0.45em] text-zinc-300 md:text-sm">
-          Puntualmente Sottozero
-        </p>
-      </div>
-      <div className="flex h-full flex-col md:flex-row">
+      <div className="flex h-full flex-col md:flex-row pt-20">
         {/* Sardegna */}
         <motion.div
           whileHover={{ scale: 1.02 }}
@@ -51,7 +60,7 @@ export default function Main_IceStoneService_Split() {
                 Produzione e consegna ghiaccio per eventi, locali e privati in tutta la Sardegna.
               </p>
 
-              <button className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-10 py-4 text-lg font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)]">
+              <button onClick={() => navigate('/home-sardegna')} className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-10 py-4 text-lg font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)]">
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition duration-1000 group-hover/button:translate-x-full"></span>
                 <span className="relative z-10">ENTRA</span>
               </button>
@@ -95,7 +104,7 @@ export default function Main_IceStoneService_Split() {
                 Consegna rapida di ghiaccio professionale per bar, eventi e privati.
               </p>
 
-              <button className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-10 py-4 text-lg font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)]">
+              <button onClick={() => navigate('/home-italia')} className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-10 py-4 text-lg font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)]">
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition duration-1000 group-hover/button:translate-x-full"></span>
                 <span className="relative z-10">ENTRA</span>
               </button>
