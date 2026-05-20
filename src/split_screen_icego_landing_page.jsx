@@ -29,12 +29,12 @@ export default function SplitScreenLandingPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <p className="mb-4 text-sm uppercase tracking-[0.4em] text-cyan-300">
+              <p className="mb-4 text-base md:text-lg uppercase tracking-[0.4em] text-cyan-300">
                 Sardegna
               </p>
 
-              <h1 className="mb-6 text-5xl font-black md:text-7xl">
-                ICEGO
+              <h1 className="mb-6 text-4xl font-black md:text-6xl">
+                ICE STONE SERVICE
               </h1>
 
               <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
@@ -76,12 +76,12 @@ export default function SplitScreenLandingPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              <p className="mb-4 text-sm uppercase tracking-[0.4em] text-cyan-300">
+              <p className="mb-4 text-base md:text-lg uppercase tracking-[0.4em] text-cyan-300">
                 Mantova • Modena
               </p>
 
-              <h1 className="mb-6 text-5xl font-black md:text-7xl">
-                ICEGO
+              <h1 className="mb-6 text-4xl font-black md:text-6xl">
+                ICE STONE SERVICE
               </h1>
 
               <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
