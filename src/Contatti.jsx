@@ -8,7 +8,7 @@ export default function Contatti() {
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-          {/* Menu Tendina */}
+          {/* Dropdown Menu */}
           <div className="relative">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -38,7 +38,7 @@ export default function Contatti() {
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
-                  Home
+                  Selezione Area
                 </Link>
                 <a 
                   href="#prodotti" 
@@ -73,11 +73,11 @@ export default function Contatti() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to="/">
+            <Link to="/home">
               <img 
                 src="/images/Logo_icestone.png" 
                 alt="IceStone Service Logo" 
-                className="h-16 md:h-20 object-contain"
+                className="h-12 md:h-16 object-contain"
               />
             </Link>
             <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE</h1>
@@ -191,7 +191,7 @@ export default function Contatti() {
             <img 
               src="/images/Logo_icestone.png" 
               alt="IceStone Service Logo" 
-              className="h-14 md:h-16 object-contain"
+              className="h-10 md:h-12 object-contain"
             />
           </div>
 
