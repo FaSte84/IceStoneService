@@ -5,7 +5,7 @@ export default function Main_IceStoneService_Split() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black text-white font-sans">
+    <div className="relative h-screen w-full overflow-hidden bg-black text-white font-sans pt-20">
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
@@ -25,7 +25,7 @@ export default function Main_IceStoneService_Split() {
         </div>
       </header>
 
-      <div className="flex h-full flex-col md:flex-row pt-20">
+      <div className="flex h-full flex-col md:flex-row">
         {/* Sardegna */}
         <motion.div
           whileHover={{ scale: 1.02 }}
@@ -44,7 +44,7 @@ export default function Main_IceStoneService_Split() {
 
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center pt-24">
+          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -88,7 +88,7 @@ export default function Main_IceStoneService_Split() {
 
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center pt-24">
+          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
