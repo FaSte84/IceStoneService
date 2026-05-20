@@ -8,7 +8,7 @@ export default function Main_IceStoneService_Split() {
     <div className="relative h-screen w-full overflow-hidden bg-black text-white">
       {/* Global Brand Title */}
       <div className="pointer-events-none absolute left-1/2 top-8 z-50 -translate-x-1/2 text-center">
-        <h1 className="text-3xl font-black uppercase tracking-[0.35em] text-cyan-200 drop-shadow-[0_0_25px_rgba(103,232,249,0.35)] md:text-5xl">
+        <h1 className="text-lg font-black uppercase tracking-[0.25em] text-cyan-200 drop-shadow-[0_0_25px_rgba(103,232,249,0.35)] md:text-2xl whitespace-nowrap">
           ICE STONE SERVICE
         </h1>
 
@@ -35,13 +35,13 @@ export default function Main_IceStoneService_Split() {
 
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
+          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center pt-24">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <p className="mb-4 text-sm uppercase tracking-[0.4em] text-cyan-300">
+              <p className="mb-4 text-xl md:text-3xl uppercase tracking-[0.4em] text-cyan-300">
                 Sardegna
               </p>
 
@@ -79,13 +79,13 @@ export default function Main_IceStoneService_Split() {
 
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
+          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center pt-24">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              <p className="mb-4 text-sm uppercase tracking-[0.4em] text-cyan-300">
+              <p className="mb-4 text-xl md:text-3xl uppercase tracking-[0.4em] text-cyan-300">
                 Mantova • Modena
               </p>
 
