@@ -83,14 +83,7 @@ export default function Main_IceStoneService_Italia() {
             <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE</h1>
           </div>
 
-          <a 
-            href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
-          >
-            Ordina Ora
-          </a>
+          <div></div>
         </div>
       </header>
 
