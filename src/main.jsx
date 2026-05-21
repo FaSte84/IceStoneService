@@ -5,7 +5,8 @@ import './index.css'
 import Main_IceStoneService_Split from './Main_IceStoneService_Split.jsx'
 import Main_IceStoneService_Italia from './Main_IceStoneService_Italia.jsx'
 import Main_IceStoneService_Sardegna from './Main_IceStoneService_Sardegna.jsx'
-import Contatti from './Contatti.jsx'
+import Contatti_IceStoneService_Italia from './Contatti_IceStoneService_Italia.jsx'
+import Contatti_IceStoneService_Sardegna from './Contatti_IceStoneService_Sardegna.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,7 +15,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Main_IceStoneService_Split />} />
         <Route path="/home-italia" element={<Main_IceStoneService_Italia />} />
         <Route path="/home-sardegna" element={<Main_IceStoneService_Sardegna />} />
-        <Route path="/contatti" element={<Contatti />} />
+        <Route path="/contatti" element={<Contatti_IceStoneService_Italia />} />
+        <Route path="/contatti-sardegna" element={<Contatti_IceStoneService_Sardegna />} />
       </Routes>
     </Router>
   </StrictMode>,
