@@ -175,7 +175,12 @@ export default function Main_IceStoneService_Sardegna() {
           </div>
 
           <div className="flex gap-6 text-sm">
-            <a href="#" className="inline-flex items-center gap-2 hover:text-white transition">
+            <a
+              href="https://www.instagram.com/icestone2.0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:text-white transition"
+            >
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 24 24"
