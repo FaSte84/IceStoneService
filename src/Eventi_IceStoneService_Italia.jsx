@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Contatti_IceStoneService_Sardegna() {
+export default function Eventi_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
@@ -12,12 +13,7 @@ export default function Contatti_IceStoneService_Sardegna() {
               onClick={() => setMenuOpen(!menuOpen)}
               className="flex items-center gap-2 text-white hover:text-cyan-400 transition"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -29,7 +25,7 @@ export default function Contatti_IceStoneService_Sardegna() {
             </button>
 
             {menuOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
                 <Link
                   to="/"
                   onClick={() => setMenuOpen(false)}
@@ -38,28 +34,28 @@ export default function Contatti_IceStoneService_Sardegna() {
                   Selezione Area
                 </Link>
                 <Link
-                  to="/prodotti-sardegna"
+                  to="/prodotti"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Prodotti
                 </Link>
                 <Link
-                  to="/eventi-sardegna"
+                  to="/eventi"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                  className="block px-6 py-3 text-white bg-white/10 transition"
                 >
                   Eventi
                 </Link>
                 <Link
-                  to="/servizi-sardegna"
+                  to="/servizi"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Servizi
                 </Link>
                 <Link
-                  to="/contatti-sardegna"
+                  to="/contatti"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
@@ -70,14 +66,14 @@ export default function Contatti_IceStoneService_Sardegna() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to="/home-sardegna">
+            <Link to="/home-italia">
               <img
                 src="/images/Logo_icestone.png"
                 alt="IceStone Service Logo"
                 className="h-12 md:h-16 object-contain"
               />
             </Link>
-            <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE SARDEGNA</h1>
+            <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE</h1>
           </div>
 
           <div></div>
@@ -85,89 +81,53 @@ export default function Contatti_IceStoneService_Sardegna() {
       </header>
 
       <section className="pt-32 pb-24 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">
-              Contattaci
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold">
-              Siamo sempre disponibili
-            </h2>
+            <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">Eventi</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Fornitura professionale per eventi e attività</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8 md:order-2">
-              <h3 className="text-2xl font-bold mb-6">Invia un messaggio</h3>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-zinc-400 mb-2">Nome e Cognome *</label>
-                  <input
-                    type="text"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Email *</label>
-                  <input
-                    type="email"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Telefono</label>
-                  <input
-                    type="tel"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                  />
-                </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Messaggio *</label>
-                  <textarea
-                    rows="5"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
-                >
-                  Invia Messaggio
-                </button>
-              </form>
+          <div className="relative overflow-hidden rounded-[40px] border border-white/10">
+            <img
+              src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1600&auto=format&fit=crop"
+              alt="Event"
+              className="absolute inset-0 w-full h-full object-cover opacity-25"
+            />
+
+            <div className="relative px-8 py-16 md:px-14 md:py-20 text-center">
+              <p className="uppercase text-cyan-300 tracking-[0.2em] text-sm mb-4">Eventi & locali</p>
+
+              <h3 className="text-4xl md:text-5xl font-black mb-6">
+                Ghiaccio sempre pronto
+                <br />
+                per grandi numeri
+              </h3>
+
+              <p className="text-zinc-300 text-lg mb-10 max-w-3xl mx-auto">
+                Serviamo bar, discoteche, catering, matrimoni e feste private con consegne rapide e grandi
+                quantità disponibili.
+              </p>
+
+              <Link
+                to="/contatti"
+                className="bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition inline-block"
+              >
+                Richiedi Preventivo
+              </Link>
             </div>
+          </div>
 
-            <div className="space-y-8 md:order-1">
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">📍</div>
-                <h3 className="text-xl font-semibold mb-2">Sede</h3>
-                <p className="text-zinc-400">
-                  Via C. Vittorio Emanuele
-                  <br />
-                  08046 Perdasdefogu (NU)
-                </p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">📞</div>
-                <h3 className="text-xl font-semibold mb-2">Telefono</h3>
-                <p className="text-cyan-400 font-bold text-lg mt-2">377 089 0066</p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">✉️</div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-cyan-400 font-bold text-lg">info@icestoneservice.it</p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">🕒</div>
-                <h3 className="text-xl font-semibold mb-2">Orari</h3>
-                <p className="text-zinc-400">Lunedì - Domenica: 24h su 24</p>
-              </div>
-            </div>
+          <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
+            <h3 className="text-2xl font-bold mb-4">Hai date e quantità?</h3>
+            <p className="text-zinc-300 mb-8">
+              Mandaci i dettagli dell’evento e ti prepariamo un’offerta su misura per Mantova e Modena.
+            </p>
+            <Link
+              to="/contatti"
+              className="inline-block bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
+            >
+              Vai ai Contatti
+            </Link>
           </div>
         </div>
       </section>

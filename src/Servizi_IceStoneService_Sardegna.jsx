@@ -34,14 +34,14 @@ export default function Servizi_IceStoneService_Sardegna() {
                   Selezione Area
                 </Link>
                 <Link
-                  to="/home-sardegna#prodotti"
+                  to="/prodotti-sardegna"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Prodotti
                 </Link>
                 <Link
-                  to="/home-sardegna#eventi"
+                  to="/eventi-sardegna"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >

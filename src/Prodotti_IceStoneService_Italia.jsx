@@ -1,8 +1,15 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Contatti_IceStoneService_Sardegna() {
+export default function Prodotti_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const products = [
+    { title: 'Cubetti Classici', size: '2 KG', price: '€3' },
+    { title: 'Premium Cocktail', size: '5 KG', price: '€10' },
+    { title: 'Ghiaccio Tritato', size: '5 KG', price: '€8' },
+  ]
+
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
@@ -12,12 +19,7 @@ export default function Contatti_IceStoneService_Sardegna() {
               onClick={() => setMenuOpen(!menuOpen)}
               className="flex items-center gap-2 text-white hover:text-cyan-400 transition"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -29,7 +31,7 @@ export default function Contatti_IceStoneService_Sardegna() {
             </button>
 
             {menuOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
                 <Link
                   to="/"
                   onClick={() => setMenuOpen(false)}
@@ -38,28 +40,28 @@ export default function Contatti_IceStoneService_Sardegna() {
                   Selezione Area
                 </Link>
                 <Link
-                  to="/prodotti-sardegna"
+                  to="/prodotti"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                  className="block px-6 py-3 text-white bg-white/10 transition"
                 >
                   Prodotti
                 </Link>
                 <Link
-                  to="/eventi-sardegna"
+                  to="/eventi"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Eventi
                 </Link>
                 <Link
-                  to="/servizi-sardegna"
+                  to="/servizi"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Servizi
                 </Link>
                 <Link
-                  to="/contatti-sardegna"
+                  to="/contatti"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
@@ -70,14 +72,14 @@ export default function Contatti_IceStoneService_Sardegna() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to="/home-sardegna">
+            <Link to="/home-italia">
               <img
                 src="/images/Logo_icestone.png"
                 alt="IceStone Service Logo"
                 className="h-12 md:h-16 object-contain"
               />
             </Link>
-            <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE SARDEGNA</h1>
+            <h1 className="text-xl font-bold tracking-wider">ICE STONE SERVICE</h1>
           </div>
 
           <div></div>
@@ -85,89 +87,55 @@ export default function Contatti_IceStoneService_Sardegna() {
       </header>
 
       <section className="pt-32 pb-24 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">
-              Contattaci
-            </p>
-            <h2 className="text-4xl md:text-5xl font-bold">
-              Siamo sempre disponibili
-            </h2>
+            <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">Prodotti</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Ghiaccio per ogni esigenza</h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8 md:order-2">
-              <h3 className="text-2xl font-bold mb-6">Invia un messaggio</h3>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-zinc-400 mb-2">Nome e Cognome *</label>
-                  <input
-                    type="text"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                    required
+          <div className="grid md:grid-cols-3 gap-8">
+            {products.map((item) => (
+              <div
+                key={item.title}
+                className="bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300"
+              >
+                <div className="h-64 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop"
+                    alt={item.title}
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Email *</label>
-                  <input
-                    type="email"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                    required
-                  />
+
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-zinc-400 mb-6">Formato {item.size}</p>
+
+                  <div className="flex items-center justify-between">
+                    <span className="text-3xl font-black">{item.price}</span>
+                    <Link
+                      to="/contatti"
+                      className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
+                    >
+                      Ordina
+                    </Link>
+                  </div>
                 </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Telefono</label>
-                  <input
-                    type="tel"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                  />
-                </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Messaggio *</label>
-                  <textarea
-                    rows="5"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
-                >
-                  Invia Messaggio
-                </button>
-              </form>
-            </div>
-
-            <div className="space-y-8 md:order-1">
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">📍</div>
-                <h3 className="text-xl font-semibold mb-2">Sede</h3>
-                <p className="text-zinc-400">
-                  Via C. Vittorio Emanuele
-                  <br />
-                  08046 Perdasdefogu (NU)
-                </p>
               </div>
+            ))}
+          </div>
 
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">📞</div>
-                <h3 className="text-xl font-semibold mb-2">Telefono</h3>
-                <p className="text-cyan-400 font-bold text-lg mt-2">377 089 0066</p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">✉️</div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-cyan-400 font-bold text-lg">info@icestoneservice.it</p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">🕒</div>
-                <h3 className="text-xl font-semibold mb-2">Orari</h3>
-                <p className="text-zinc-400">Lunedì - Domenica: 24h su 24</p>
-              </div>
-            </div>
+          <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
+            <h3 className="text-2xl font-bold mb-4">Vuoi un preventivo o una consegna su misura?</h3>
+            <p className="text-zinc-300 mb-8">
+              Scrivici e ti rispondiamo con disponibilità, prezzi e tempistiche per Mantova e Modena.
+            </p>
+            <Link
+              to="/contatti"
+              className="inline-block bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
+            >
+              Vai ai Contatti
+            </Link>
           </div>
         </div>
       </section>

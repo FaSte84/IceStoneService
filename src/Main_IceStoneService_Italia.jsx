@@ -40,20 +40,20 @@ export default function Main_IceStoneService_Italia() {
                 >
                   Selezione Area
                 </Link>
-                <a 
-                  href="#prodotti" 
+                <Link
+                  to="/prodotti"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Prodotti
-                </a>
-                <a 
-                  href="#eventi" 
+                </Link>
+                <Link
+                  to="/eventi"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Eventi
-                </a>
+                </Link>
                 <Link 
                   to="/servizi" 
                   onClick={() => setMenuOpen(false)}
@@ -134,97 +134,6 @@ export default function Main_IceStoneService_Italia() {
               WhatsApp
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* Products */}
-      <section id="prodotti" className="max-w-7xl mx-auto px-6 py-24">
-        <div className="text-center mb-16">
-          <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">
-            I nostri prodotti
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Ghiaccio per ogni esigenza
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              title: "Cubetti Classici",
-              size: "2 KG",
-              price: "€3",
-            },
-            {
-              title: "Premium Cocktail",
-              size: "5 KG",
-              price: "€10",
-            },
-            {
-              title: "Ghiaccio Tritato",
-              size: "5 KG",
-              price: "€8",
-            },
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300"
-            >
-              <div className="h-64 overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop"
-                  alt={item.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <div className="p-8">
-                <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                <p className="text-zinc-400 mb-6">Formato {item.size}</p>
-
-                <div className="flex items-center justify-between">
-                  <span className="text-3xl font-black">{item.price}</span>
-
-                  <button className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold">
-                    Ordina
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Events */}
-      <section id="eventi" className="relative py-32 overflow-hidden">
-        <img
-          src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1600&auto=format&fit=crop"
-          alt="Event"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-        />
-
-        <div className="relative max-w-5xl mx-auto px-6 text-center">
-          <p className="uppercase text-cyan-300 tracking-[0.2em] text-sm mb-4">
-            Eventi & locali
-          </p>
-
-          <h2 className="text-5xl font-black mb-6">
-            Fornitura professionale
-            <br />
-            per eventi e attività
-          </h2>
-
-          <p className="text-zinc-300 text-lg mb-10 max-w-3xl mx-auto">
-            Serviamo bar, discoteche, catering, matrimoni, feste private
-            ed eventi con consegne rapide e grandi quantità disponibili.
-          </p>
-
-          <Link 
-            to="/contatti"
-            className="bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition inline-block"
-          >
-            Richiedi Preventivo
-          </Link>
         </div>
       </section>
 

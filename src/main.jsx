@@ -9,6 +9,10 @@ import Contatti_IceStoneService_Italia from './Contatti_IceStoneService_Italia.j
 import Contatti_IceStoneService_Sardegna from './Contatti_IceStoneService_Sardegna.jsx'
 import Servizi_IceStoneService_Italia from './Servizi_IceStoneService_Italia.jsx'
 import Servizi_IceStoneService_Sardegna from './Servizi_IceStoneService_Sardegna.jsx'
+import Prodotti_IceStoneService_Italia from './Prodotti_IceStoneService_Italia.jsx'
+import Prodotti_IceStoneService_Sardegna from './Prodotti_IceStoneService_Sardegna.jsx'
+import Eventi_IceStoneService_Italia from './Eventi_IceStoneService_Italia.jsx'
+import Eventi_IceStoneService_Sardegna from './Eventi_IceStoneService_Sardegna.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +23,10 @@ createRoot(document.getElementById('root')).render(
         <Route path="/home-sardegna" element={<Main_IceStoneService_Sardegna />} />
         <Route path="/contatti" element={<Contatti_IceStoneService_Italia />} />
         <Route path="/contatti-sardegna" element={<Contatti_IceStoneService_Sardegna />} />
+        <Route path="/prodotti" element={<Prodotti_IceStoneService_Italia />} />
+        <Route path="/prodotti-sardegna" element={<Prodotti_IceStoneService_Sardegna />} />
+        <Route path="/eventi" element={<Eventi_IceStoneService_Italia />} />
+        <Route path="/eventi-sardegna" element={<Eventi_IceStoneService_Sardegna />} />
         <Route path="/servizi" element={<Servizi_IceStoneService_Italia />} />
         <Route path="/servizi-sardegna" element={<Servizi_IceStoneService_Sardegna />} />
       </Routes>
