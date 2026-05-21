@@ -54,13 +54,13 @@ export default function Main_IceStoneService_Sardegna() {
                 >
                   Eventi
                 </a>
-                <a 
-                  href="#servizi" 
+                <Link 
+                  to="/servizi-sardegna" 
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Servizi
-                </a>
+                </Link>
                 <Link 
                   to="/contatti-sardegna" 
                   onClick={() => setMenuOpen(false)}
@@ -190,26 +190,6 @@ export default function Main_IceStoneService_Sardegna() {
                   </button>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Features */}
-      <section id="servizi" className="bg-zinc-950 py-24 px-6">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 text-center">
-          {[
-            "Consegna rapida in Sardegna",
-            "Ghiaccio premium",
-            "Disponibile 7/7",
-            "Per bar ed eventi",
-          ].map((feature, i) => (
-            <div
-              key={i}
-              className="bg-black border border-white/10 rounded-3xl p-10"
-            >
-              <div className="text-5xl mb-6">🧊</div>
-              <h3 className="text-xl font-semibold">{feature}</h3>
             </div>
           ))}
         </div>

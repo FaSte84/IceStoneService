@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Contatti_IceStoneService_Italia() {
+export default function Servizi_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
@@ -12,12 +13,7 @@ export default function Contatti_IceStoneService_Italia() {
               onClick={() => setMenuOpen(!menuOpen)}
               className="flex items-center gap-2 text-white hover:text-cyan-400 transition"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -29,7 +25,7 @@ export default function Contatti_IceStoneService_Italia() {
             </button>
 
             {menuOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
+              <div className="absolute top-full left-0 mt-2 w-56 bg-black/95 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl overflow-hidden">
                 <Link
                   to="/"
                   onClick={() => setMenuOpen(false)}
@@ -54,7 +50,7 @@ export default function Contatti_IceStoneService_Italia() {
                 <Link
                   to="/servizi"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                  className="block px-6 py-3 text-white bg-white/10 transition"
                 >
                   Servizi
                 </Link>
@@ -88,85 +84,40 @@ export default function Contatti_IceStoneService_Italia() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">
-              Contattaci
+              Servizi
             </p>
             <h2 className="text-4xl md:text-5xl font-bold">
-              Siamo sempre disponibili
+              Soluzioni per locali, eventi e privati
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8 md:order-2">
-              <h3 className="text-2xl font-bold mb-6">Invia un messaggio</h3>
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-zinc-400 mb-2">Nome e Cognome *</label>
-                  <input
-                    type="text"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                    required
-                  />
+            <div className="space-y-8">
+              {[
+                { title: 'Consegna rapida', text: 'Consegne puntuali per garantire ghiaccio sempre disponibile.' },
+                { title: 'Ghiaccio premium', text: 'Qualità costante per cocktail, bar ed uso professionale.' },
+                { title: 'Disponibile 7/7', text: 'Operativi tutti i giorni per urgenze e rifornimenti.' },
+                { title: 'Per bar ed eventi', text: 'Forniture per discoteche, catering, matrimoni e feste.' },
+              ].map((item) => (
+                <div key={item.title} className="bg-black border border-white/10 rounded-3xl p-8">
+                  <div className="text-4xl mb-4">🧊</div>
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <p className="text-zinc-400">{item.text}</p>
                 </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Email *</label>
-                  <input
-                    type="email"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Telefono</label>
-                  <input
-                    type="tel"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
-                  />
-                </div>
-                <div>
-                  <label className="block text-zinc-400 mb-2">Messaggio *</label>
-                  <textarea
-                    rows="5"
-                    className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
-                >
-                  Invia Messaggio
-                </button>
-              </form>
+              ))}
             </div>
 
-            <div className="space-y-8 md:order-1">
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">📍</div>
-                <h3 className="text-xl font-semibold mb-2">Sede</h3>
-                <p className="text-zinc-400">
-                  Via C. Battisti, 8c
-                  <br />
-                  46020 Pegognaga (MN)
-                </p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">📞</div>
-                <h3 className="text-xl font-semibold mb-2">Telefono</h3>
-                <p className="text-cyan-400 font-bold text-lg">353 463 2562</p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">✉️</div>
-                <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-cyan-400 font-bold text-lg">info@icestoneservice.it</p>
-              </div>
-
-              <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">🕒</div>
-                <h3 className="text-xl font-semibold mb-2">Orari</h3>
-                <p className="text-zinc-400">Operativi ogni giorno per garantire un servizio continuo e puntuale anche nei giorni festivi</p>
-              </div>
+            <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+              <h3 className="text-2xl font-bold mb-6">Richiedi informazioni</h3>
+              <p className="text-zinc-300 mb-8">
+                Scrivici per un preventivo o per organizzare una consegna su misura.
+              </p>
+              <Link
+                to="/contatti"
+                className="inline-block bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
+              >
+                Vai ai Contatti
+              </Link>
             </div>
           </div>
         </div>
