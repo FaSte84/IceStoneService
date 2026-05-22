@@ -11,7 +11,7 @@ export default function Main_IceStoneService_Split() {
         <div className="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
           <div className="flex items-center gap-4">
             <img 
-              src="/images/Logo_icestone.png" 
+              src="/images/Logo_icestone.png"
               alt="IceStone Service Logo" 
               className="h-12 md:h-16 object-contain"
             />
