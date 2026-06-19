@@ -33,7 +33,7 @@ export default function Main_IceStoneService_Split() {
           className="group relative flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15]"
         >
           <img
-            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop"
+            src="/images/ScogliRossi_2.jpg"
             alt="Sardegna"
             className="absolute inset-0 h-full w-full object-cover scale-105 transition duration-[2000ms] ease-out group-hover:scale-125 group-hover:rotate-1"
           />
