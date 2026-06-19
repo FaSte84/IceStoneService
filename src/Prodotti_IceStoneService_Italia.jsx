@@ -18,10 +18,10 @@ export default function Prodotti_IceStoneService_Italia() {
       image: '/images/Prodotti_Italia/Cocktail_Icestone.jpeg',
     },
     {
-      title: 'Ghiaccio Tritato',
-      size: '5 KG',
-      price: '€8',
-      image: '/images/Prodotti_Italia/Buste_Fronte_Retro.jpeg',
+      title: 'Creazione di Lastre di Ghiaccio Personalizzate',
+      size: 'Su misura',
+      price: 'Su richiesta',
+      image: '/images/Prodotti_Italia/LastraCampari.jpeg',
     },
   ]
 

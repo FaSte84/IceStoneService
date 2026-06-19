@@ -6,6 +6,7 @@ export default function Servizi_IceStoneService_Sardegna() {
   const services = [
     {
       title: "Comodato d'Uso di Contenitori Isotermici",
+      image: '/images/Prodotti_Italia/Contenitore_isotermico.png',
       text:
         "Per garantire la corretta conservazione del ghiaccio durante l'utilizzo e la distribuzione, mettiamo a disposizione contenitori isotermici in comodato d'uso. Soluzioni pratiche e affidabili per mantenere il prodotto nelle migliori condizioni fino al momento dell'impiego.",
     },
@@ -134,18 +135,20 @@ export default function Servizi_IceStoneService_Sardegna() {
                   <div className="text-4xl mb-4">🧊</div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-zinc-400">{item.text}</p>
+                  {item.image ? (
+                    <div className="mt-6 rounded-3xl border border-white/10 bg-zinc-950/80 p-4">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="mx-auto h-40 w-auto max-w-full object-contain md:h-48"
+                      />
+                    </div>
+                  ) : null}
                 </div>
               ))}
             </div>
 
             <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8">
-              <div className="mb-8 overflow-hidden rounded-3xl border border-white/10">
-                <img
-                  src="/images/Prodotti_Italia/Contenitore_isotermico.png"
-                  alt="Contenitore isotermico"
-                  className="h-64 w-full object-cover"
-                />
-              </div>
               <h3 className="text-2xl font-bold mb-6">Perche scegliere i nostri servizi?</h3>
               <div className="space-y-3 mb-8">
                 {advantages.map((item) => (
