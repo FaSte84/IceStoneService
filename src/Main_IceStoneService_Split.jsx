@@ -65,7 +65,6 @@ export default function Main_IceStoneService_Split() {
             </motion.div>
           </div>
 
-          <div className="absolute left-1/2 top-0 hidden h-full w-px bg-white/10 md:block"></div>
         </motion.div>
 
         {/* Mantova Modena */}
