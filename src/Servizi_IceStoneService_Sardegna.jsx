@@ -3,6 +3,35 @@ import { Link } from 'react-router-dom'
 
 export default function Servizi_IceStoneService_Sardegna() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const services = [
+    {
+      title: "Comodato d'Uso di Contenitori Isotermici",
+      text:
+        "Per garantire la corretta conservazione del ghiaccio durante l'utilizzo e la distribuzione, mettiamo a disposizione contenitori isotermici in comodato d'uso. Soluzioni pratiche e affidabili per mantenere il prodotto nelle migliori condizioni fino al momento dell'impiego.",
+    },
+    {
+      title: "Comodato d'Uso di Furgoni Frigoriferi",
+      text:
+        "Offriamo la possibilita di utilizzare furgoni frigoriferi in comodato d'uso per esigenze di trasporto e stoccaggio temporaneo. Un servizio pensato per aziende, eventi e attivita commerciali che necessitano di mantenere la catena del freddo senza interruzioni.",
+    },
+    {
+      title: 'Noleggio Congelatori a Pozzetto',
+      text:
+        'Disponiamo di congelatori a pozzetto a noleggio per eventi, manifestazioni, attivita stagionali e esigenze temporanee. I nostri congelatori assicurano elevate prestazioni di conservazione e rappresentano una soluzione pratica e conveniente per lo stoccaggio del ghiaccio.',
+    },
+    {
+      title: 'Assistenza e Consulenza',
+      text:
+        'Il nostro team e a disposizione per individuare la soluzione piu adatta alle vostre necessita, offrendo supporto nella scelta delle attrezzature e dei servizi piu idonei per la gestione e la conservazione del ghiaccio.',
+    },
+  ]
+  const advantages = [
+    'Conservazione ottimale del ghiaccio.',
+    'Soluzioni flessibili per ogni esigenza.',
+    'Attrezzature affidabili e professionali.',
+    'Supporto tecnico dedicato.',
+    'Servizio rapido ed efficiente.',
+  ]
 
   return (
     <div className="min-h-screen bg-black text-white font-sans">
@@ -94,18 +123,13 @@ export default function Servizi_IceStoneService_Sardegna() {
               Servizi
             </p>
             <h2 className="text-4xl md:text-5xl font-bold">
-              Soluzioni per locali, eventi e privati in Sardegna
+              I Nostri Servizi
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-8">
-              {[
-                { title: 'Consegna rapida in Sardegna', text: 'Consegne puntuali su tutto il territorio regionale.' },
-                { title: 'Ghiaccio premium', text: 'Qualità costante per cocktail, bar ed uso professionale.' },
-                { title: 'Disponibile 7/7', text: 'Operativi tutti i giorni per urgenze e rifornimenti.' },
-                { title: 'Per bar ed eventi', text: 'Forniture per discoteche, catering, matrimoni e feste.' },
-              ].map((item) => (
+              {services.map((item) => (
                 <div key={item.title} className="bg-black border border-white/10 rounded-3xl p-8">
                   <div className="text-4xl mb-4">🧊</div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
@@ -115,15 +139,32 @@ export default function Servizi_IceStoneService_Sardegna() {
             </div>
 
             <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8">
-              <h3 className="text-2xl font-bold mb-6">Richiedi informazioni</h3>
+              <div className="mb-8 overflow-hidden rounded-3xl border border-white/10">
+                <img
+                  src="/images/Prodotti_Italia/Contenitore_isotermico.png"
+                  alt="Contenitore isotermico"
+                  className="h-64 w-full object-cover"
+                />
+              </div>
+              <h3 className="text-2xl font-bold mb-6">Perche scegliere i nostri servizi?</h3>
+              <div className="space-y-3 mb-8">
+                {advantages.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-white/10 bg-black/30 px-4 py-3 text-zinc-200"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
               <p className="text-zinc-300 mb-8">
-                Scrivici per un preventivo o per organizzare una consegna su misura.
+                Per maggiori informazioni sui servizi disponibili o per richiedere un preventivo personalizzato, contattate il nostro staff.
               </p>
               <Link
                 to="/contatti-sardegna"
                 className="inline-block bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
               >
-                Vai ai Contatti
+                Richiedi un preventivo
               </Link>
             </div>
           </div>

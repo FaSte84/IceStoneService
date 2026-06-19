@@ -5,9 +5,24 @@ export default function Prodotti_IceStoneService_Sardegna() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const products = [
-    { title: 'Cubetti Classici', size: '2 KG', price: '€3' },
-    { title: 'Premium Cocktail', size: '5 KG', price: '€10' },
-    { title: 'Ghiaccio Tritato', size: '5 KG', price: '€8' },
+    {
+      title: 'Cubetti Classici',
+      size: '2 KG',
+      price: '€3',
+      image: '/images/Prodotti_Italia/Ghiaccio quadrato.jpg',
+    },
+    {
+      title: 'Premium Cocktail',
+      size: '5 KG',
+      price: '€10',
+      image: '/images/Prodotti_Italia/Cocktail_Icestone.jpeg',
+    },
+    {
+      title: 'Ghiaccio Tritato',
+      size: '5 KG',
+      price: '€8',
+      image: '/images/Prodotti_Sardegna/Buste_Fronte_Retro.jpeg',
+    },
   ]
 
   return (
@@ -108,7 +123,7 @@ export default function Prodotti_IceStoneService_Sardegna() {
               >
                 <div className="h-64 overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1200&auto=format&fit=crop"
+                    src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover"
                   />
