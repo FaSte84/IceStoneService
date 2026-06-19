@@ -1,8 +1,26 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Eventi_IceStoneService_Italia() {
+export default function ChiSiamo_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const team = [
+    {
+      role: 'Coordinamento',
+      title: 'Organizzazione e qualità',
+      text: 'Seguiamo ordini, disponibilità e qualità del ghiaccio per garantire un servizio puntuale e costante.',
+    },
+    {
+      role: 'Consegne',
+      title: 'Rapidità sul territorio',
+      text: 'Chi lavora nelle consegne organizza i giri e porta il prodotto dove serve, per locali, eventi e privati.',
+    },
+    {
+      role: 'Assistenza',
+      title: 'Contatto diretto con il cliente',
+      text: 'Restiamo disponibili per informazioni, richieste speciali e preventivi personalizzati per ogni esigenza.',
+    },
+  ]
 
   return (
     <div className="min-h-screen bg-black text-white font-sans">
@@ -36,7 +54,7 @@ export default function Eventi_IceStoneService_Italia() {
                 <Link
                   to="/chi-siamo"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                  className="block px-6 py-3 text-white bg-white/10 transition"
                 >
                   Chi siamo
                 </Link>
@@ -50,7 +68,7 @@ export default function Eventi_IceStoneService_Italia() {
                 <Link
                   to="/eventi"
                   onClick={() => setMenuOpen(false)}
-                  className="block px-6 py-3 text-white bg-white/10 transition"
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Eventi
                 </Link>
@@ -90,44 +108,47 @@ export default function Eventi_IceStoneService_Italia() {
       <section className="pt-32 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">Eventi</p>
-            <h2 className="text-4xl md:text-5xl font-bold">Fornitura professionale per eventi e attività</h2>
+            <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">Chi siamo</p>
+            <h2 className="text-4xl md:text-5xl font-bold">Le persone dietro Ice Stone Service</h2>
           </div>
 
-          <div className="relative overflow-hidden rounded-[40px] border border-white/10">
+          <div className="relative overflow-hidden rounded-[40px] border border-white/10 mb-14">
             <img
-              src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1600&auto=format&fit=crop"
-              alt="Event"
-              className="absolute inset-0 w-full h-full object-cover opacity-25"
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop"
+              alt="Team Ice Stone Service"
+              className="absolute inset-0 w-full h-full object-cover opacity-20"
             />
 
             <div className="relative px-8 py-16 md:px-14 md:py-20 text-center">
-              <p className="uppercase text-cyan-300 tracking-[0.2em] text-sm mb-4">Eventi & locali</p>
+              <p className="uppercase text-cyan-300 tracking-[0.2em] text-sm mb-4">Ice Stone Service Italia</p>
 
               <h3 className="text-4xl md:text-5xl font-black mb-6">
-                Ghiaccio sempre pronto
+                Un team operativo
                 <br />
-                per grandi numeri
+                vicino ai clienti
               </h3>
 
               <p className="text-zinc-300 text-lg mb-10 max-w-3xl mx-auto">
-                Serviamo bar, discoteche, catering, matrimoni e feste private con consegne rapide e grandi
-                quantità disponibili.
+                Lavoriamo ogni giorno per offrire ghiaccio professionale con consegne rapide, attenzione al servizio
+                e supporto diretto a bar, eventi e privati tra Mantova e Modena.
               </p>
-
-              <Link
-                to="/contatti"
-                className="bg-cyan-400 text-black px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition inline-block"
-              >
-                Richiedi Preventivo
-              </Link>
             </div>
           </div>
 
+          <div className="grid md:grid-cols-3 gap-8">
+            {team.map((member) => (
+              <div key={member.title} className="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+                <p className="text-cyan-300 uppercase tracking-[0.2em] text-xs mb-3">{member.role}</p>
+                <h3 className="text-2xl font-bold mb-4">{member.title}</h3>
+                <p className="text-zinc-300 leading-relaxed">{member.text}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Hai date e quantità?</h3>
+            <h3 className="text-2xl font-bold mb-4">Vuoi conoscere meglio il nostro servizio?</h3>
             <p className="text-zinc-300 mb-8">
-              Mandaci i dettagli dell’evento e ti prepariamo un’offerta su misura per Mantova e Modena.
+              Scrivici per ricevere informazioni, disponibilità e un preventivo su misura.
             </p>
             <Link
               to="/contatti"

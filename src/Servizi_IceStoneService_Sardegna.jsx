@@ -34,6 +34,13 @@ export default function Servizi_IceStoneService_Sardegna() {
                   Selezione Area
                 </Link>
                 <Link
+                  to="/chi-siamo-sardegna"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Chi siamo
+                </Link>
+                <Link
                   to="/prodotti-sardegna"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"

@@ -34,6 +34,13 @@ export default function Servizi_IceStoneService_Italia() {
                   Selezione Area
                 </Link>
                 <Link
+                  to="/chi-siamo"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Chi siamo
+                </Link>
+                <Link
                   to="/prodotti"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"

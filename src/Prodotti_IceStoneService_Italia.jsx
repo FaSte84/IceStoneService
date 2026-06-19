@@ -40,6 +40,13 @@ export default function Prodotti_IceStoneService_Italia() {
                   Selezione Area
                 </Link>
                 <Link
+                  to="/chi-siamo"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Chi siamo
+                </Link>
+                <Link
                   to="/prodotti"
                   onClick={() => setMenuOpen(false)}
                   className="block px-6 py-3 text-white bg-white/10 transition"
@@ -128,7 +135,7 @@ export default function Prodotti_IceStoneService_Italia() {
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Vuoi un preventivo o una consegna su misura?</h3>
             <p className="text-zinc-300 mb-8">
-              Scrivici e ti rispondiamo con disponibilità, prezzi e tempistiche per Mantova e Modena.
+              Scrivici e ti rispondiamo con disponibilità, prezzi e tempistiche per la tua zona.
             </p>
             <Link
               to="/contatti"
@@ -146,7 +153,7 @@ export default function Prodotti_IceStoneService_Italia() {
             <img
               src="/images/Logo_IceStoneService_Rettangolare.jpg"
               alt="IceStone Service Logo"
-              className="h-10 md:h-12 object-contain scale-125 md:scale-150 origin-left"
+              className="h-10 md:h-12 object-contain"
             />
           </div>
 

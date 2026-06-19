@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Main_IceStoneService_Split() {
   const navigate = useNavigate();
@@ -54,8 +54,6 @@ export default function Main_IceStoneService_Split() {
                 Sardegna
               </p>
 
-              
-
               <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
                 Produzione e consegna ghiaccio per eventi, locali e privati in tutta la Sardegna.
               </p>
@@ -97,8 +95,6 @@ export default function Main_IceStoneService_Split() {
               <p className="mb-4 text-xl md:text-3xl uppercase tracking-[0.4em] text-cyan-300">
                 Mantova • Modena
               </p>
-
-              
 
               <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
                 Consegna rapida di ghiaccio professionale per bar, eventi e privati.

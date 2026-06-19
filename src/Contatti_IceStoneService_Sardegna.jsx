@@ -3,6 +3,54 @@ import { Link } from 'react-router-dom'
 
 export default function Contatti_IceStoneService_Sardegna() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    telefono: '',
+    messaggio: ''
+  })
+  const [isLoading, setIsLoading] = useState(false)
+  const [message, setMessage] = useState('')
+  const [messageType, setMessageType] = useState('')
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setMessage('')
+    setMessageType('')
+
+    fetch('/htdocs/contatti.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        setMessage('Messaggio inviato con successo! Ti contatteremo a breve.')
+        setMessageType('success')
+        setFormData({ nome: '', email: '', telefono: '', messaggio: '' })
+      } else {
+        setMessage(data.error || 'Si è verificato un errore. Riprova più tardi.')
+        setMessageType('error')
+      }
+    })
+    .catch(() => {
+      setMessage('Si è verificato un errore di rete. Riprova più tardi.')
+      setMessageType('error')
+    })
+    .finally(() => {
+      setIsLoading(false)
+    })
+  }
+
   return (
     <div className="min-h-screen bg-black text-white font-sans">
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
@@ -36,6 +84,13 @@ export default function Contatti_IceStoneService_Sardegna() {
                   className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
                 >
                   Selezione Area
+                </Link>
+                <Link
+                  to="/chi-siamo-sardegna"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-6 py-3 text-zinc-300 hover:text-white hover:bg-white/10 transition"
+                >
+                  Chi siamo
                 </Link>
                 <Link
                   to="/prodotti-sardegna"
@@ -98,11 +153,19 @@ export default function Contatti_IceStoneService_Sardegna() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-zinc-900 border border-white/10 rounded-3xl p-8 md:order-2">
               <h3 className="text-2xl font-bold mb-6">Invia un messaggio</h3>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                {message && (
+                  <div className={`p-4 rounded-xl ${messageType === 'success' ? 'bg-green-500/20 border border-green-500/50' : 'bg-red-500/20 border border-red-500/50'}`}>
+                    <p className={messageType === 'success' ? 'text-green-300' : 'text-red-300'}>{message}</p>
+                  </div>
+                )}
                 <div>
                   <label className="block text-zinc-400 mb-2">Nome e Cognome *</label>
                   <input
                     type="text"
+                    name="nome"
+                    value={formData.nome}
+                    onChange={handleChange}
                     className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
                     required
                   />
@@ -111,6 +174,9 @@ export default function Contatti_IceStoneService_Sardegna() {
                   <label className="block text-zinc-400 mb-2">Email *</label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
                     required
                   />
@@ -119,12 +185,18 @@ export default function Contatti_IceStoneService_Sardegna() {
                   <label className="block text-zinc-400 mb-2">Telefono</label>
                   <input
                     type="tel"
+                    name="telefono"
+                    value={formData.telefono}
+                    onChange={handleChange}
                     className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition"
                   />
                 </div>
                 <div>
                   <label className="block text-zinc-400 mb-2">Messaggio *</label>
                   <textarea
+                    name="messaggio"
+                    value={formData.messaggio}
+                    onChange={handleChange}
                     rows="5"
                     className="w-full bg-black border border-white/20 rounded-xl px-4 py-3 text-white focus:border-cyan-400 focus:outline-none transition resize-none"
                     required
@@ -132,9 +204,10 @@ export default function Contatti_IceStoneService_Sardegna() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
+                  disabled={isLoading}
+                  className="w-full bg-cyan-400 text-black px-8 py-4 rounded-full text-lg font-bold hover:scale-105 transition disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
-                  Invia Messaggio
+                  {isLoading ? 'Invio in corso...' : 'Invia Messaggio'}
                 </button>
               </form>
             </div>
