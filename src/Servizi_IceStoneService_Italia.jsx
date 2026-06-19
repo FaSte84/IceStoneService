@@ -11,9 +11,9 @@ export default function Servizi_IceStoneService_Italia() {
         "Per garantire la corretta conservazione del ghiaccio durante l'utilizzo e la distribuzione, mettiamo a disposizione contenitori isotermici in comodato d'uso. Soluzioni pratiche e affidabili per mantenere il prodotto nelle migliori condizioni fino al momento dell'impiego.",
     },
     {
-      title: "Comodato d'Uso di Furgoni Frigoriferi",
+      title: 'Noleggio di Furgoni Frigoriferi',
       text:
-        "Offriamo la possibilita di utilizzare furgoni frigoriferi in comodato d'uso per esigenze di trasporto e stoccaggio temporaneo. Un servizio pensato per aziende, eventi e attivita commerciali che necessitano di mantenere la catena del freddo senza interruzioni.",
+        'Offriamo il noleggio di furgoni frigoriferi per esigenze di trasporto e stoccaggio temporaneo. Un servizio pensato per aziende, eventi e attivita commerciali che necessitano di mantenere la catena del freddo senza interruzioni.',
     },
     {
       title: 'Noleggio Congelatori a Pozzetto',

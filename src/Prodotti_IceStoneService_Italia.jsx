@@ -8,19 +8,16 @@ export default function Prodotti_IceStoneService_Italia() {
     {
       title: 'Cubetti Classici',
       size: '2 KG',
-      price: '€3',
       image: '/images/Prodotti_Italia/Ghiaccio quadrato.jpg',
     },
     {
       title: 'Premium Cocktail',
       size: '5 KG',
-      price: '€10',
       image: '/images/Prodotti_Italia/Cocktail_Icestone.jpeg',
     },
     {
       title: 'Creazione di Lastre di Ghiaccio Personalizzate',
       size: 'Su misura',
-      price: 'Su richiesta',
       image: '/images/Prodotti_Italia/LastraCampari.jpeg',
     },
   ]
@@ -133,15 +130,12 @@ export default function Prodotti_IceStoneService_Italia() {
                   <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
                   <p className="text-zinc-400 mb-6">Formato {item.size}</p>
 
-                  <div className="flex items-center justify-between">
-                    <span className="text-3xl font-black">{item.price}</span>
-                    <Link
-                      to="/contatti"
-                      className="bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
-                    >
-                      Ordina
-                    </Link>
-                  </div>
+                  <Link
+                    to="/contatti"
+                    className="inline-block bg-cyan-400 text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
+                  >
+                    Ordina
+                  </Link>
                 </div>
               </div>
             ))}
