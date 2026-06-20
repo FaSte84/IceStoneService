@@ -5,7 +5,7 @@ export default function Main_IceStoneService_Split() {
   const navigate = useNavigate();
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-black text-white font-sans pt-20">
+    <div className="relative min-h-screen w-full overflow-x-hidden bg-black text-white font-sans pt-20 md:h-screen md:overflow-hidden">
       {/* Navbar */}
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
@@ -25,12 +25,12 @@ export default function Main_IceStoneService_Split() {
         </div>
       </header>
 
-      <div className="flex h-full flex-col md:flex-row">
+      <div className="flex min-h-[calc(100vh-5rem)] flex-col md:h-full md:min-h-0 md:flex-row">
         {/* Sardegna */}
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.5 }}
-          className="group relative flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15]"
+          className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0"
         >
           <img
             src="/images/ScogliRossi_2.jpg"
@@ -44,23 +44,24 @@ export default function Main_IceStoneService_Split() {
 
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
+          <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 py-10 text-center md:justify-center md:px-8">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
+              className="w-full max-w-md"
             >
-              <div className="mb-5 inline-flex rounded-full border border-cyan-300/30 bg-black/35 px-6 py-3 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm">
-                <p className="text-2xl font-bold uppercase tracking-[0.35em] text-cyan-200 md:text-4xl [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
+              <div className="mb-4 inline-flex max-w-full rounded-full border border-cyan-300/30 bg-black/35 px-4 py-2.5 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm md:mb-5 md:px-6 md:py-3">
+                <p className="text-base font-bold uppercase leading-tight tracking-[0.18em] text-cyan-200 sm:text-xl md:text-4xl md:tracking-[0.35em] [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
                   Sardegna
                 </p>
               </div>
 
-              <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
+              <p className="mx-auto mb-7 max-w-md text-sm text-zinc-200 sm:text-lg md:mb-10 md:text-xl">
                 Produzione e consegna ghiaccio per eventi, locali e privati in tutta la Sardegna.
               </p>
 
-              <button onClick={() => navigate('/home-sardegna')} className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-10 py-4 text-lg font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)]">
+              <button onClick={() => navigate('/home-sardegna')} className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-8 py-3 text-base font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)] md:px-10 md:py-4 md:text-lg">
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition duration-1000 group-hover/button:translate-x-full"></span>
                 <span className="relative z-10">ENTRA</span>
               </button>
@@ -73,7 +74,7 @@ export default function Main_IceStoneService_Split() {
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.5 }}
-          className="group relative flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15]"
+          className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0"
         >
           <img
             src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop"
@@ -87,23 +88,29 @@ export default function Main_IceStoneService_Split() {
 
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
-          <div className="relative z-10 flex h-full flex-col items-center justify-center px-8 text-center">
+          <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 py-10 text-center md:justify-center md:px-8">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
+              className="w-full max-w-md"
             >
-              <div className="mb-5 inline-flex rounded-full border border-cyan-300/30 bg-black/35 px-6 py-3 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm">
-                <p className="text-2xl font-bold uppercase tracking-[0.35em] text-cyan-200 md:text-4xl [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
-                  Mantova, Modena e Reggio Emilia
+              <div className="mb-4 inline-flex max-w-full rounded-full border border-cyan-300/30 bg-black/35 px-4 py-2.5 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm md:mb-5 md:px-6 md:py-3">
+                <p className="text-base font-bold uppercase leading-tight tracking-[0.1em] text-cyan-200 sm:text-xl sm:tracking-[0.18em] md:text-4xl md:tracking-[0.35em] [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
+                  <span className="md:hidden">
+                    Mantova, Modena
+                    <br />
+                    e Reggio Emilia
+                  </span>
+                  <span className="hidden md:inline">Mantova, Modena e Reggio Emilia</span>
                 </p>
               </div>
 
-              <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
+              <p className="mx-auto mb-7 max-w-md text-sm text-zinc-200 sm:text-lg md:mb-10 md:text-xl">
                 Consegna rapida di ghiaccio professionale per bar, eventi e privati.
               </p>
 
-              <button onClick={() => navigate('/home-italia')} className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-10 py-4 text-lg font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)]">
+              <button onClick={() => navigate('/home-italia')} className="group/button relative overflow-hidden rounded-full border border-cyan-300/40 bg-white/10 px-8 py-3 text-base font-semibold backdrop-blur-xl transition duration-300 hover:bg-cyan-300 hover:text-black hover:shadow-[0_0_40px_rgba(103,232,249,0.6)] md:px-10 md:py-4 md:text-lg">
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition duration-1000 group-hover/button:translate-x-full"></span>
                 <span className="relative z-10">ENTRA</span>
               </button>
