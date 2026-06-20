@@ -130,7 +130,7 @@ export default function ChiSiamo_IceStoneService_Italia() {
 
               <p className="text-zinc-300 text-lg mb-10 max-w-3xl mx-auto">
                 Lavoriamo ogni giorno per offrire ghiaccio professionale con consegne rapide, attenzione al servizio
-                e supporto diretto a bar, eventi e privati tra Mantova e Modena.
+                e supporto diretto a bar, eventi e privati tra Mantova, Modena e Reggio Emilia.
               </p>
             </div>
           </div>

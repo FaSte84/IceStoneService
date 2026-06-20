@@ -50,9 +50,11 @@ export default function Main_IceStoneService_Split() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              <p className="mb-4 text-xl md:text-3xl uppercase tracking-[0.4em] text-cyan-300">
-                Sardegna
-              </p>
+              <div className="mb-5 inline-flex rounded-full border border-cyan-300/30 bg-black/35 px-6 py-3 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm">
+                <p className="text-2xl font-bold uppercase tracking-[0.35em] text-cyan-200 md:text-4xl [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
+                  Sardegna
+                </p>
+              </div>
 
               <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
                 Produzione e consegna ghiaccio per eventi, locali e privati in tutta la Sardegna.
@@ -67,7 +69,7 @@ export default function Main_IceStoneService_Split() {
 
         </motion.div>
 
-        {/* Mantova Modena */}
+        {/* Mantova, Modena e Reggio Emilia */}
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.5 }}
@@ -75,7 +77,7 @@ export default function Main_IceStoneService_Split() {
         >
           <img
             src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop"
-            alt="Mantova Modena"
+            alt="Mantova, Modena e Reggio Emilia"
             className="absolute inset-0 h-full w-full object-cover scale-105 transition duration-[2000ms] ease-out group-hover:scale-125 group-hover:rotate-1"
           />
 
@@ -91,9 +93,11 @@ export default function Main_IceStoneService_Split() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              <p className="mb-4 text-xl md:text-3xl uppercase tracking-[0.4em] text-cyan-300">
-                Mantova • Modena
-              </p>
+              <div className="mb-5 inline-flex rounded-full border border-cyan-300/30 bg-black/35 px-6 py-3 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm">
+                <p className="text-2xl font-bold uppercase tracking-[0.35em] text-cyan-200 md:text-4xl [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
+                  Mantova, Modena e Reggio Emilia
+                </p>
+              </div>
 
               <p className="mx-auto mb-10 max-w-md text-lg text-zinc-200 md:text-xl">
                 Consegna rapida di ghiaccio professionale per bar, eventi e privati.

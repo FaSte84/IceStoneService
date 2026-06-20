@@ -125,7 +125,7 @@ export default function Main_IceStoneService_Italia() {
 
           <p className="text-zinc-300 text-lg md:text-xl max-w-2xl mx-auto mb-10">
             Produzione, confezionamento e trasporto di ghiaccio professionale
-            su tutto il territorio di Mantova e Modena.
+            su tutto il territorio di Mantova, Modena e Reggio Emilia.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

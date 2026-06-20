@@ -127,7 +127,7 @@ export default function Eventi_IceStoneService_Italia() {
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Hai date e quantità?</h3>
             <p className="text-zinc-300 mb-8">
-              Mandaci i dettagli dell’evento e ti prepariamo un’offerta su misura per Mantova e Modena.
+              Mandaci i dettagli dell’evento e ti prepariamo un’offerta su misura per Mantova, Modena e Reggio Emilia.
             </p>
             <Link
               to="/contatti"

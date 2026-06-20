@@ -130,7 +130,7 @@ export default function Main_IceStoneService_Sardegna() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
-              href="https://wa.me/393534632562?text=Ciao! Vorrei ordinare del ghiaccio alimentare per la Sardegna."
+              href="https://wa.me/393770890066?text=Ciao! Vorrei ordinare del ghiaccio alimentare per la Sardegna."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#128C7E] hover:scale-105 transition flex items-center gap-2"

@@ -1,24 +1,55 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Prodotti_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const cubettiSlides = [
+    '/images/Prodotti_Italia/Cocktail_Icestone.jpeg',
+    '/images/Prodotti_Italia/GhiaccioCubettiSoli.jpeg',
+  ]
+  const [cubettiSlideIndex, setCubettiSlideIndex] = useState(0)
+  const lastraSlides = [
+    '/images/Prodotti_Italia/LastraCampari.jpeg',
+    '/images/Prodotti_Italia/LastraCampariAlto.jpeg',
+    '/images/Prodotti_Italia/LastraCampariLato.jpeg',
+  ]
+  const [lastraSlideIndex, setLastraSlideIndex] = useState(0)
+
+  useEffect(() => {
+    const slideTimer = window.setInterval(() => {
+      setCubettiSlideIndex((currentIndex) => (currentIndex + 1) % cubettiSlides.length)
+    }, 2500)
+
+    return () => window.clearInterval(slideTimer)
+  }, [cubettiSlides.length])
+
+  useEffect(() => {
+    const slideTimer = window.setInterval(() => {
+      setLastraSlideIndex((currentIndex) => (currentIndex + 1) % lastraSlides.length)
+    }, 2500)
+
+    return () => window.clearInterval(slideTimer)
+  }, [lastraSlides.length])
 
   const products = [
     {
-      title: 'Cubetti Classici',
+      title: 'Ice Cubes Premium',
       size: '2 KG',
       image: '/images/Prodotti_Italia/Ghiaccio quadrato.jpg',
     },
     {
-      title: 'Premium Cocktail',
-      size: '5 KG',
-      image: '/images/Prodotti_Italia/Cocktail_Icestone.jpeg',
+      title: 'Ghiaccio Cubetti',
+      size: 'Buste da 2,5 kg',
+      images: cubettiSlides,
+      slideIndex: cubettiSlideIndex,
+      setSlideIndex: setCubettiSlideIndex,
     },
     {
       title: 'Creazione di Lastre di Ghiaccio Personalizzate',
       size: 'Su misura',
-      image: '/images/Prodotti_Italia/LastraCampari.jpeg',
+      images: lastraSlides,
+      slideIndex: lastraSlideIndex,
+      setSlideIndex: setLastraSlideIndex,
     },
   ]
 
@@ -118,12 +149,40 @@ export default function Prodotti_IceStoneService_Italia() {
                 key={item.title}
                 className="bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-2 transition duration-300"
               >
-                <div className="h-64 overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="relative h-64 overflow-hidden bg-black">
+                  {item.images ? (
+                    item.images.map((image, index) => (
+                      <img
+                        key={image}
+                        src={image}
+                        alt={`${item.title} ${index + 1}`}
+                        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+                          index === item.slideIndex ? 'opacity-100' : 'opacity-0'
+                        }`}
+                      />
+                    ))
+                  ) : (
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
+                  {item.images ? (
+                    <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 rounded-full bg-black/40 px-3 py-2 backdrop-blur-sm">
+                      {item.images.map((image, index) => (
+                        <button
+                          key={image}
+                          type="button"
+                          onClick={() => item.setSlideIndex(index)}
+                          aria-label={`Mostra slide ${index + 1}`}
+                          className={`h-2.5 w-2.5 rounded-full transition ${
+                            index === item.slideIndex ? 'scale-125 bg-cyan-300' : 'bg-white/40 hover:bg-white/70'
+                          }`}
+                        ></button>
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
 
                 <div className="p-8">

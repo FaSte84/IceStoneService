@@ -217,9 +217,7 @@ export default function Contatti_IceStoneService_Sardegna() {
                 <div className="text-4xl mb-4">📍</div>
                 <h3 className="text-xl font-semibold mb-2">Sede</h3>
                 <p className="text-zinc-400">
-                  Via C. Vittorio Emanuele
-                  <br />
-                  08046 Perdasdefogu (NU)
+                  08048 Tortolì (NU)
                 </p>
               </div>
 
