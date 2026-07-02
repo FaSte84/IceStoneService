@@ -106,12 +106,12 @@ export default function Main_IceStoneService_Sardegna() {
 
         <div className="relative z-10 text-center max-w-4xl px-6 py-12">
           <p className="uppercase tracking-[0.4em] text-cyan-300 text-base md:text-lg mb-8 font-semibold">
-            Produzione â€¢ Confezionamento â€¢ Consegna
+            Produzione - Confezionamento - Consegna
           </p>
 
           
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-            <span className="text-cyan-400">MAI PIÃ™</span> 
+            <span className="text-cyan-400">MAI PIU</span>
             <br />
             SENZA GHIACCIO IN SARDEGNA
           </h1>

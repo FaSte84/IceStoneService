@@ -8,12 +8,12 @@ export default function ChiSiamo_IceStoneService_Sardegna() {
     {
       role: 'Coordinamento',
       title: 'Ordini e organizzazione',
-      text: 'Gestiamo richieste, disponibilitÃ  e pianificazione delle consegne per offrire un servizio affidabile in Sardegna.',
+      text: 'Gestiamo richieste, disponibilita e pianificazione delle consegne per offrire un servizio affidabile in Sardegna.',
     },
     {
       role: 'Consegne',
       title: 'Copertura del territorio',
-      text: 'Chi si occupa delle consegne lavora per portare il ghiaccio dove serve, con rapiditÃ  e attenzione ai tempi.',
+      text: 'Chi si occupa delle consegne lavora per portare il ghiaccio dove serve, con rapidita e attenzione ai tempi.',
     },
     {
       role: 'Supporto',
@@ -148,7 +148,7 @@ export default function ChiSiamo_IceStoneService_Sardegna() {
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Vuoi conoscere il nostro team e il servizio?</h3>
             <p className="text-zinc-300 mb-8">
-              Contattaci per ricevere informazioni, disponibilitÃ  e una proposta personalizzata.
+              Contattaci per ricevere informazioni, disponibilita e una proposta personalizzata.
             </p>
             <Link
               to="/contatti-sardegna"

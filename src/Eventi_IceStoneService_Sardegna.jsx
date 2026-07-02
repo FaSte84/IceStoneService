@@ -92,7 +92,7 @@ export default function Eventi_IceStoneService_Sardegna() {
           <div className="text-center mb-16">
             <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">Eventi</p>
             <h2 className="text-4xl md:text-5xl font-bold">
-              Fornitura professionale per eventi e attivitÃ  in Sardegna
+              Fornitura professionale per eventi e attivita in Sardegna
             </h2>
           </div>
 
@@ -114,7 +114,7 @@ export default function Eventi_IceStoneService_Sardegna() {
 
               <p className="text-zinc-300 text-lg mb-10 max-w-3xl mx-auto">
                 Serviamo bar, discoteche, catering, matrimoni e feste private con consegne rapide e grandi
-                quantitÃ  disponibili in tutta la Sardegna.
+                quantita disponibili in tutta la Sardegna.
               </p>
 
               <Link
@@ -127,9 +127,9 @@ export default function Eventi_IceStoneService_Sardegna() {
           </div>
 
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Hai date e quantitÃ ?</h3>
+            <h3 className="text-2xl font-bold mb-4">Hai date e quantita?</h3>
             <p className="text-zinc-300 mb-8">
-              Mandaci i dettagli dellâ€™evento e ti prepariamo unâ€™offerta su misura per la tua zona.
+              Mandaci i dettagli dell'evento e ti prepariamo un'offerta su misura per la tua zona.
             </p>
             <Link
               to="/contatti-sardegna"

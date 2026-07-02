@@ -203,7 +203,7 @@ export default function Prodotti_IceStoneService_Sardegna() {
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Vuoi un preventivo o una consegna su misura?</h3>
             <p className="text-zinc-300 mb-8">
-              Scrivici e ti rispondiamo con disponibilitÃ , prezzi e tempistiche per tutta la Sardegna.
+              Scrivici e ti rispondiamo con disponibilita, prezzi e tempistiche per tutta la Sardegna.
             </p>
             <Link
               to="/contatti-sardegna"

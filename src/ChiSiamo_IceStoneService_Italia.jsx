@@ -7,12 +7,12 @@ export default function ChiSiamo_IceStoneService_Italia() {
   const team = [
     {
       role: 'Coordinamento',
-      title: 'Organizzazione e qualitÃ ',
-      text: 'Seguiamo ordini, disponibilitÃ  e qualitÃ  del ghiaccio per garantire un servizio puntuale e costante.',
+      title: 'Organizzazione e qualita',
+      text: 'Seguiamo ordini, disponibilita e qualita del ghiaccio per garantire un servizio puntuale e costante.',
     },
     {
       role: 'Consegne',
-      title: 'RapiditÃ  sul territorio',
+      title: 'Rapidita sul territorio',
       text: 'Chi lavora nelle consegne organizza i giri e porta il prodotto dove serve, per locali, eventi e privati.',
     },
     {
@@ -148,7 +148,7 @@ export default function ChiSiamo_IceStoneService_Italia() {
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Vuoi conoscere meglio il nostro servizio?</h3>
             <p className="text-zinc-300 mb-8">
-              Scrivici per ricevere informazioni, disponibilitÃ  e un preventivo su misura.
+              Scrivici per ricevere informazioni, disponibilita e un preventivo su misura.
             </p>
             <Link
               to="/contatti"

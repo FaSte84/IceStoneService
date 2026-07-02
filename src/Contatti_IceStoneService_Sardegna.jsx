@@ -38,12 +38,12 @@ export default function Contatti_IceStoneService_Sardegna() {
         setMessageType('success')
         setFormData({ nome: '', email: '', telefono: '', messaggio: '' })
       } else {
-        setMessage(data.error || 'Si Ã¨ verificato un errore. Riprova piÃ¹ tardi.')
+        setMessage(data.error || 'Si e verificato un errore. Riprova piu tardi.')
         setMessageType('error')
       }
     })
     .catch(() => {
-      setMessage('Si Ã¨ verificato un errore di rete. Riprova piÃ¹ tardi.')
+      setMessage('Si e verificato un errore di rete. Riprova piu tardi.')
       setMessageType('error')
     })
     .finally(() => {
@@ -214,29 +214,29 @@ export default function Contatti_IceStoneService_Sardegna() {
 
             <div className="space-y-8 md:order-1">
               <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">ðŸ“</div>
+                <div className="text-4xl mb-4">📍</div>
                 <h3 className="text-xl font-semibold mb-2">Sede</h3>
                 <p className="text-zinc-400">
-                  08048 TortolÃ¬ (NU)
+                  08048 Tortoli (NU)
                 </p>
               </div>
 
               <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">ðŸ“ž</div>
+                <div className="text-4xl mb-4">📞</div>
                 <h3 className="text-xl font-semibold mb-2">Telefono</h3>
                 <p className="text-cyan-400 font-bold text-lg mt-2">377 089 0066</p>
               </div>
 
               <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">âœ‰ï¸</div>
+                <div className="text-4xl mb-4">✉️</div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
                 <p className="text-cyan-400 font-bold text-lg">info@icestoneservice.it</p>
               </div>
 
               <div className="bg-black border border-white/10 rounded-3xl p-8">
-                <div className="text-4xl mb-4">ðŸ•’</div>
+                <div className="text-4xl mb-4">🕒</div>
                 <h3 className="text-xl font-semibold mb-2">Orari</h3>
-                <p className="text-zinc-400">LunedÃ¬ - Domenica: 24h su 24</p>
+                <p className="text-zinc-400">Lunedi - Domenica: 24h su 24</p>
               </div>
             </div>
           </div>

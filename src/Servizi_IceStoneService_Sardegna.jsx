@@ -132,7 +132,7 @@ export default function Servizi_IceStoneService_Sardegna() {
             <div className="space-y-8">
               {services.map((item) => (
                 <div key={item.title} className="bg-black border border-white/10 rounded-3xl p-8">
-                  <div className="text-4xl mb-4">ðŸ§Š</div>
+                  <div className="text-4xl mb-4">🧊</div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-zinc-400">{item.text}</p>
                   {item.image ? (

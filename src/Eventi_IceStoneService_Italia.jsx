@@ -91,7 +91,7 @@ export default function Eventi_IceStoneService_Italia() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-cyan-300 uppercase tracking-[0.2em] text-sm mb-4">Eventi</p>
-            <h2 className="text-4xl md:text-5xl font-bold">Fornitura professionale per eventi e attivitÃ </h2>
+            <h2 className="text-4xl md:text-5xl font-bold">Fornitura professionale per eventi e attivita</h2>
           </div>
 
           <div className="relative overflow-hidden rounded-[40px] border border-white/10">
@@ -112,7 +112,7 @@ export default function Eventi_IceStoneService_Italia() {
 
               <p className="text-zinc-300 text-lg mb-10 max-w-3xl mx-auto">
                 Serviamo bar, discoteche, catering, matrimoni e feste private con consegne rapide e grandi
-                quantitÃ  disponibili.
+                quantita disponibili.
               </p>
 
               <Link
@@ -125,9 +125,9 @@ export default function Eventi_IceStoneService_Italia() {
           </div>
 
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">Hai date e quantitÃ ?</h3>
+            <h3 className="text-2xl font-bold mb-4">Hai date e quantita?</h3>
             <p className="text-zinc-300 mb-8">
-              Mandaci i dettagli dellâ€™evento e ti prepariamo unâ€™offerta su misura per Mantova, Modena e Reggio Emilia.
+              Mandaci i dettagli dell'evento e ti prepariamo un'offerta su misura per Mantova, Modena e Reggio Emilia.
             </p>
             <Link
               to="/contatti"
