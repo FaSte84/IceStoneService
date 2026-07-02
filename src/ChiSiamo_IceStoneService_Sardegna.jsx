@@ -8,12 +8,12 @@ export default function ChiSiamo_IceStoneService_Sardegna() {
     {
       role: 'Coordinamento',
       title: 'Ordini e organizzazione',
-      text: 'Gestiamo richieste, disponibilità e pianificazione delle consegne per offrire un servizio affidabile in Sardegna.',
+      text: 'Gestiamo richieste, disponibilitÃ  e pianificazione delle consegne per offrire un servizio affidabile in Sardegna.',
     },
     {
       role: 'Consegne',
       title: 'Copertura del territorio',
-      text: 'Chi si occupa delle consegne lavora per portare il ghiaccio dove serve, con rapidità e attenzione ai tempi.',
+      text: 'Chi si occupa delle consegne lavora per portare il ghiaccio dove serve, con rapiditÃ  e attenzione ai tempi.',
     },
     {
       role: 'Supporto',
@@ -148,7 +148,7 @@ export default function ChiSiamo_IceStoneService_Sardegna() {
           <div className="mt-14 bg-black border border-white/10 rounded-3xl p-8 text-center">
             <h3 className="text-2xl font-bold mb-4">Vuoi conoscere il nostro team e il servizio?</h3>
             <p className="text-zinc-300 mb-8">
-              Contattaci per ricevere informazioni, disponibilità e una proposta personalizzata.
+              Contattaci per ricevere informazioni, disponibilitÃ  e una proposta personalizzata.
             </p>
             <Link
               to="/contatti-sardegna"
@@ -172,28 +172,38 @@ export default function ChiSiamo_IceStoneService_Sardegna() {
 
           <div className="flex gap-6 text-sm">
             <a
-              href="https://www.instagram.com/icestone2.0/"
+              href="https://www.instagram.com/icestone_service?igsh=dDQycDBoZGw5dmU%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-[#E1306C] hover:opacity-90 transition"
             >
+              <img
+                src="/images/Button-Instagram.png"
+                alt=""
+                className="h-5 w-5 object-contain"
+                onError={(event) => {
+                  event.currentTarget.style.display = 'none'
+                }}
+              />
+              Instagram
+            </a>
+            <a
+              href="https://wa.me/393770890066?text=Ciao! Vorrei ordinare del ghiaccio alimentare per la Sardegna."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#25D366] hover:opacity-90 transition"
+            >
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                fill="currentColor"
                 aria-hidden="true"
               >
-                <rect x="3" y="3" width="18" height="18" rx="5" ry="5" />
-                <circle cx="12" cy="12" r="3.5" />
-                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                <path d="M20.52 3.48A11.8 11.8 0 0 0 12.07 0C5.53 0 .2 5.31.2 11.84c0 2.09.55 4.14 1.59 5.95L0 24l6.38-1.67a11.83 11.83 0 0 0 5.69 1.45h.01c6.53 0 11.84-5.31 11.84-11.84 0-3.16-1.23-6.13-3.4-8.46Zm-8.45 18.3h-.01a9.83 9.83 0 0 1-5.01-1.37l-.36-.21-3.79 1 1.01-3.7-.23-.38a9.8 9.8 0 0 1-1.51-5.28c0-5.42 4.41-9.84 9.84-9.84 2.63 0 5.1 1.02 6.96 2.88a9.79 9.79 0 0 1 2.88 6.96c0 5.42-4.42 9.84-9.79 9.84Zm5.4-7.37c-.29-.15-1.71-.84-1.97-.93-.26-.1-.45-.15-.64.14-.19.29-.74.93-.91 1.12-.17.19-.33.22-.62.07-.29-.15-1.2-.44-2.29-1.4-.85-.76-1.42-1.7-1.58-1.99-.17-.29-.02-.45.13-.59.13-.13.29-.33.44-.49.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.56-.88-2.14-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.98 2.43.02 1.43 1.03 2.82 1.18 3.01.14.19 2.02 3.08 4.89 4.32.68.29 1.21.47 1.62.6.68.22 1.3.19 1.79.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33Z" />
               </svg>
-              Instagram
+              WhatsApp
             </a>
-            <a href="#" className="inline-flex items-center gap-2 hover:text-white transition">
+            <Link to="/privacy" className="inline-flex items-center gap-2 hover:text-white transition">
               <svg
                 className="h-4 w-4"
                 viewBox="0 0 24 24"
@@ -208,7 +218,7 @@ export default function ChiSiamo_IceStoneService_Sardegna() {
                 <path d="M8 11V8a4 4 0 0 1 8 0v3" />
               </svg>
               Privacy
-            </a>
+            </Link>
           </div>
         </div>
       </footer>

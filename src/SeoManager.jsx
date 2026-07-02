@@ -101,6 +101,11 @@ const ROUTE_META = {
     title: 'Contatti Sardegna - Ice Stone Service',
     description: 'Contatta Ice Stone Service Sardegna per preventivi, disponibilita e consegne.',
   },
+  '/privacy': {
+    title: 'Privacy Policy - Ice Stone Service',
+    description:
+      'Informativa privacy di Ice Stone Service: trattamento dei dati personali, contatti, diritti degli interessati e informazioni sui cookie.',
+  },
 }
 
 export default function SeoManager() {

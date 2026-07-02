@@ -16,6 +16,7 @@ import Prodotti_IceStoneService_Sardegna from './Prodotti_IceStoneService_Sardeg
 import Eventi_IceStoneService_Italia from './Eventi_IceStoneService_Italia.jsx'
 import Eventi_IceStoneService_Sardegna from './Eventi_IceStoneService_Sardegna.jsx'
 import SeoManager from './SeoManager.jsx'
+import Privacy_IceStoneService from './Privacy_IceStoneService.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -35,6 +36,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/eventi-sardegna" element={<Eventi_IceStoneService_Sardegna />} />
         <Route path="/servizi" element={<Servizi_IceStoneService_Italia />} />
         <Route path="/servizi-sardegna" element={<Servizi_IceStoneService_Sardegna />} />
+        <Route path="/privacy" element={<Privacy_IceStoneService />} />
       </Routes>
     </Router>
   </StrictMode>,
