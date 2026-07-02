@@ -15,10 +15,12 @@ import Prodotti_IceStoneService_Italia from './Prodotti_IceStoneService_Italia.j
 import Prodotti_IceStoneService_Sardegna from './Prodotti_IceStoneService_Sardegna.jsx'
 import Eventi_IceStoneService_Italia from './Eventi_IceStoneService_Italia.jsx'
 import Eventi_IceStoneService_Sardegna from './Eventi_IceStoneService_Sardegna.jsx'
+import SeoManager from './SeoManager.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
+      <SeoManager />
       <Routes>
         <Route path="/" element={<Main_IceStoneService_Split />} />
         <Route path="/home-italia" element={<Main_IceStoneService_Italia />} />
