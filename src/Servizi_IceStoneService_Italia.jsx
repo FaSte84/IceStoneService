@@ -6,17 +6,24 @@ export default function Servizi_IceStoneService_Italia() {
   const services = [
     {
       title: "Comodato d'Uso di Contenitori Isotermici",
-      image: '/images/Prodotti_Italia/Contenitore_isotermico.png',
+      image: '/images/Servizi_Italia/Contenitore_isotermico-removebg.png',
+      imageWrapperClassName: 'px-2 py-2',
+      imageClassName: 'h-60 md:h-72',
       text:
         "Per garantire la corretta conservazione del ghiaccio durante l'utilizzo e la distribuzione, mettiamo a disposizione contenitori isotermici in comodato d'uso. Soluzioni pratiche e affidabili per mantenere il prodotto nelle migliori condizioni fino al momento dell'impiego.",
     },
     {
       title: 'Noleggio di Furgoni Frigoriferi',
+      cardClassName: 'border-cyan-300/25 bg-cyan-400/[0.04]',
+      iconClassName: 'text-cyan-300',
       text:
         'Offriamo il noleggio di furgoni frigoriferi per esigenze di trasporto e stoccaggio temporaneo. Un servizio pensato per aziende, eventi e attivita commerciali che necessitano di mantenere la catena del freddo senza interruzioni.',
     },
     {
       title: 'Noleggio Congelatori a Pozzetto',
+      image: '/images/Servizi_Italia/Congelatore_Pozzetto-removebg.png',
+      imageWrapperClassName: 'px-2 py-2',
+      imageClassName: 'h-72 md:h-80',
       text:
         'Disponiamo di congelatori a pozzetto a noleggio per eventi, manifestazioni, attivita stagionali e esigenze temporanee. I nostri congelatori assicurano elevate prestazioni di conservazione e rappresentano una soluzione pratica e conveniente per lo stoccaggio del ghiaccio.',
     },
@@ -131,16 +138,25 @@ export default function Servizi_IceStoneService_Italia() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-8">
               {services.map((item) => (
-                <div key={item.title} className="bg-black border border-white/10 rounded-3xl p-8">
-                  <div className="text-4xl mb-4">🧊</div>
+                <div
+                  key={item.title}
+                  className={`rounded-3xl border p-8 ${item.cardClassName ?? 'bg-black border-white/10'}`}
+                >
+                  <div className={`text-4xl mb-4 ${item.iconClassName ?? ''}`}>🧊</div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-zinc-400">{item.text}</p>
                   {item.image ? (
-                    <div className="mt-6 rounded-3xl border border-white/10 bg-zinc-950/80 p-4">
+                    <div
+                      className={`mt-6 rounded-3xl border border-cyan-300/30 bg-transparent ${
+                        item.imageWrapperClassName ?? 'px-3 py-4'
+                      }`}
+                    >
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="mx-auto h-40 w-auto max-w-full object-contain md:h-48"
+                        className={`mx-auto w-auto max-w-full object-contain ${
+                          item.imageClassName ?? 'h-56 md:h-64'
+                        }`}
                       />
                     </div>
                   ) : null}

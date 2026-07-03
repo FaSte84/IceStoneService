@@ -111,7 +111,7 @@ export default function Main_IceStoneService_Sardegna() {
 
           
           <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
-            <span className="text-cyan-400">MAI PIU</span>
+            <span className="text-cyan-400">MAI PIÙ</span>
             <br />
             SENZA GHIACCIO IN SARDEGNA
           </h1>
@@ -162,9 +162,12 @@ export default function Main_IceStoneService_Sardegna() {
             direttamente dove ti serve in Sardegna.
           </p>
 
-          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition">
+          <Link
+            to="/contatti-sardegna"
+            className="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
+          >
             Ordina Adesso
-          </button>
+          </Link>
         </div>
       </section>
 

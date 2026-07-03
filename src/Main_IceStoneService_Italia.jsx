@@ -162,9 +162,12 @@ export default function Main_IceStoneService_Italia() {
             direttamente dove ti serve.
           </p>
 
-          <button className="bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition">
+          <Link
+            to="/contatti"
+            className="inline-block bg-black text-white px-10 py-4 rounded-full text-lg font-bold hover:scale-105 transition"
+          >
             Ordina Adesso
-          </button>
+          </Link>
         </div>
       </section>
 
