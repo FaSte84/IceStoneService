@@ -82,8 +82,9 @@ export default function Main_IceStoneService_Sardegna() {
           <div className="flex items-center gap-4">
             <Link to="/home-sardegna">
               <img 
-                src="/images/Logo_icestone.png" 
+                src="/images/Logo_icestone.webp" 
                 alt="IceStone Service Logo" 
+                decoding="async"
                 className="h-12 md:h-16 object-contain"
               />
             </Link>
@@ -99,6 +100,9 @@ export default function Main_IceStoneService_Sardegna() {
         <img
           src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1600&auto=format&fit=crop"
           alt="Ice"
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
 
@@ -178,8 +182,10 @@ export default function Main_IceStoneService_Sardegna() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <img 
-              src="/images/Logo_IceStoneService_Rettangolare.jpg" 
+              src="/images/Logo_IceStoneService_Rettangolare.webp" 
               alt="IceStone Service Logo" 
+              loading="lazy"
+              decoding="async"
               className="h-10 md:h-12 object-contain scale-125 md:scale-150 origin-left"
             />
           </div>
@@ -192,8 +198,10 @@ export default function Main_IceStoneService_Sardegna() {
               className="inline-flex items-center gap-2 text-[#E1306C] hover:opacity-90 transition"
             >
               <img
-                src="/images/Button-Instagram.png"
+                src="/images/Button-Instagram.webp"
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="h-5 w-5 object-contain"
                 onError={(event) => {
                   event.currentTarget.style.display = 'none'

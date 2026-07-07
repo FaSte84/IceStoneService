@@ -11,8 +11,9 @@ export default function Main_IceStoneService_Split() {
         <div className="max-w-7xl mx-auto flex items-center justify-center px-6 py-4">
           <div className="flex items-center gap-4">
             <img 
-              src="/images/Logo_icestone.png"
+              src="/images/Logo_icestone.webp"
               alt="IceStone Service Logo" 
+              decoding="async"
               className="h-12 md:h-16 object-contain"
             />
             <div className="text-center">
@@ -33,8 +34,11 @@ export default function Main_IceStoneService_Split() {
           className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0"
         >
           <img
-            src="/images/ScogliRossi_2.jpg"
+            src="/images/ScogliRossi_2.webp"
             alt="Sardegna"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover scale-105 transition duration-[2000ms] ease-out group-hover:scale-125 group-hover:rotate-1"
           />
 
@@ -79,6 +83,9 @@ export default function Main_IceStoneService_Split() {
           <img
             src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop"
             alt="Mantova, Modena e Reggio Emilia"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="absolute inset-0 h-full w-full object-cover scale-105 transition duration-[2000ms] ease-out group-hover:scale-125 group-hover:rotate-1"
           />
 

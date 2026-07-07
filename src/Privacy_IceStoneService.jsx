@@ -77,8 +77,9 @@ export default function Privacy_IceStoneService() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link to="/" className="flex items-center gap-3">
             <img
-              src="/images/Logo_icestone.png"
+              src="/images/Logo_icestone.webp"
               alt="Ice Stone Service"
+              decoding="async"
               className="h-12 w-12 object-contain"
             />
             <div>
@@ -161,4 +162,3 @@ export default function Privacy_IceStoneService() {
     </div>
   )
 }
-

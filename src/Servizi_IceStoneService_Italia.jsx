@@ -6,7 +6,7 @@ export default function Servizi_IceStoneService_Italia() {
   const services = [
     {
       title: "Comodato d'Uso di Contenitori Isotermici",
-      image: '/images/Servizi_Italia/Contenitore_isotermico-removebg.png',
+      image: '/images/Servizi_Italia/Contenitore_isotermico-removebg.webp',
       imageWrapperClassName: 'px-2 py-2',
       imageClassName: 'h-60 md:h-72',
       text:
@@ -21,7 +21,7 @@ export default function Servizi_IceStoneService_Italia() {
     },
     {
       title: 'Noleggio Congelatori a Pozzetto',
-      image: '/images/Servizi_Italia/Congelatore_Pozzetto-removebg.png',
+      image: '/images/Servizi_Italia/Congelatore_Pozzetto-removebg.webp',
       imageWrapperClassName: 'px-2 py-2',
       imageClassName: 'h-72 md:h-80',
       text:
@@ -112,8 +112,9 @@ export default function Servizi_IceStoneService_Italia() {
           <div className="flex items-center gap-4">
             <Link to="/home-italia">
               <img
-                src="/images/Logo_icestone.png"
+                src="/images/Logo_icestone.webp"
                 alt="IceStone Service Logo"
+                decoding="async"
                 className="h-12 md:h-16 object-contain"
               />
             </Link>
@@ -154,6 +155,8 @@ export default function Servizi_IceStoneService_Italia() {
                       <img
                         src={item.image}
                         alt={item.title}
+                        loading="lazy"
+                        decoding="async"
                         className={`mx-auto w-auto max-w-full object-contain ${
                           item.imageClassName ?? 'h-56 md:h-64'
                         }`}
@@ -194,8 +197,10 @@ export default function Servizi_IceStoneService_Italia() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <img
-              src="/images/Logo_IceStoneService_Rettangolare.jpg"
+              src="/images/Logo_IceStoneService_Rettangolare.webp"
               alt="IceStone Service Logo"
+              loading="lazy"
+              decoding="async"
               className="h-10 md:h-12 object-contain scale-125 md:scale-150 origin-left"
             />
           </div>
@@ -208,8 +213,10 @@ export default function Servizi_IceStoneService_Italia() {
               className="inline-flex items-center gap-2 text-[#E1306C] hover:opacity-90 transition"
             >
               <img
-                src="/images/Button-Instagram.png"
+                src="/images/Button-Instagram.webp"
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="h-5 w-5 object-contain"
                 onError={(event) => {
                   event.currentTarget.style.display = 'none'

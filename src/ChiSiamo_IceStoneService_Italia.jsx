@@ -93,8 +93,9 @@ export default function ChiSiamo_IceStoneService_Italia() {
           <div className="flex items-center gap-4">
             <Link to="/home-italia">
               <img
-                src="/images/Logo_icestone.png"
+                src="/images/Logo_icestone.webp"
                 alt="IceStone Service Logo"
+                decoding="async"
                 className="h-12 md:h-16 object-contain"
               />
             </Link>
@@ -116,6 +117,8 @@ export default function ChiSiamo_IceStoneService_Italia() {
             <img
               src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop"
               alt="Team Ice Stone Service"
+              fetchPriority="high"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover opacity-20"
             />
 
@@ -164,8 +167,10 @@ export default function ChiSiamo_IceStoneService_Italia() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <img
-              src="/images/Logo_IceStoneService_Rettangolare.jpg"
+              src="/images/Logo_IceStoneService_Rettangolare.webp"
               alt="IceStone Service Logo"
+              loading="lazy"
+              decoding="async"
               className="h-10 md:h-12 object-contain"
             />
           </div>
@@ -178,8 +183,10 @@ export default function ChiSiamo_IceStoneService_Italia() {
               className="inline-flex items-center gap-2 text-[#E1306C] hover:opacity-90 transition"
             >
               <img
-                src="/images/Button-Instagram.png"
+                src="/images/Button-Instagram.webp"
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="h-5 w-5 object-contain"
                 onError={(event) => {
                   event.currentTarget.style.display = 'none'

@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 export default function Prodotti_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
   const cubettiSlides = [
-    '/images/Prodotti_Italia/Cocktail_Icestone.jpeg',
-    '/images/Prodotti_Italia/GhiaccioCubettiSoli.jpeg',
+    '/images/Prodotti_Italia/Cocktail_Icestone.webp',
+    '/images/Prodotti_Italia/GhiaccioCubettiSoli.webp',
   ]
   const [cubettiSlideIndex, setCubettiSlideIndex] = useState(0)
   const lastraSlides = [
-    '/images/Prodotti_Italia/LastraCampari.jpeg',
-    '/images/Prodotti_Italia/LastraCampariAlto.jpeg',
-    '/images/Prodotti_Italia/LastraCampariLato.jpeg',
+    '/images/Prodotti_Italia/LastraCampari.webp',
+    '/images/Prodotti_Italia/LastraCampariAlto.webp',
+    '/images/Prodotti_Italia/LastraCampariLato.webp',
   ]
   const [lastraSlideIndex, setLastraSlideIndex] = useState(0)
 
@@ -124,8 +124,9 @@ export default function Prodotti_IceStoneService_Italia() {
           <div className="flex items-center gap-4">
             <Link to="/home-italia">
               <img
-                src="/images/Logo_icestone.png"
+                src="/images/Logo_icestone.webp"
                 alt="IceStone Service Logo"
+                decoding="async"
                 className="h-12 md:h-16 object-contain"
               />
             </Link>
@@ -156,6 +157,8 @@ export default function Prodotti_IceStoneService_Italia() {
                         key={image}
                         src={image}
                         alt={`${item.title} ${index + 1}`}
+                        loading={index === item.slideIndex ? 'eager' : 'lazy'}
+                        decoding="async"
                         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
                           index === item.slideIndex ? 'opacity-100' : 'opacity-0'
                         }`}
@@ -165,6 +168,8 @@ export default function Prodotti_IceStoneService_Italia() {
                     <img
                       src={item.image}
                       alt={item.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover"
                     />
                   )}
@@ -219,8 +224,10 @@ export default function Prodotti_IceStoneService_Italia() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div>
             <img
-              src="/images/Logo_IceStoneService_Rettangolare.jpg"
+              src="/images/Logo_IceStoneService_Rettangolare.webp"
               alt="IceStone Service Logo"
+              loading="lazy"
+              decoding="async"
               className="h-10 md:h-12 object-contain"
             />
           </div>
@@ -233,8 +240,10 @@ export default function Prodotti_IceStoneService_Italia() {
               className="inline-flex items-center gap-2 text-[#E1306C] hover:opacity-90 transition"
             >
               <img
-                src="/images/Button-Instagram.png"
+                src="/images/Button-Instagram.webp"
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="h-5 w-5 object-contain"
                 onError={(event) => {
                   event.currentTarget.style.display = 'none'
