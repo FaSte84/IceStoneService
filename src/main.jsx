@@ -2,9 +2,9 @@ import { StrictMode, Suspense, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css'
+import Main_IceStoneService_Split from './Main_IceStoneService_Split.jsx'
 import SeoManager from './SeoManager.jsx'
 
-const Main_IceStoneService_Split = lazy(() => import('./Main_IceStoneService_Split.jsx'))
 const Main_IceStoneService_Italia = lazy(() => import('./Main_IceStoneService_Italia.jsx'))
 const Main_IceStoneService_Sardegna = lazy(() => import('./Main_IceStoneService_Sardegna.jsx'))
 const Contatti_IceStoneService_Italia = lazy(() => import('./Contatti_IceStoneService_Italia.jsx'))

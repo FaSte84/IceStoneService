@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 export default function Main_IceStoneService_Split() {
@@ -26,16 +25,14 @@ export default function Main_IceStoneService_Split() {
         </div>
       </header>
 
-      <div className="flex min-h-[calc(100vh-5rem)] flex-col md:h-full md:min-h-0 md:flex-row">
+      <main className="flex min-h-[calc(100vh-5rem)] flex-col md:h-full md:min-h-0 md:flex-row">
         {/* Sardegna */}
-        <motion.div
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.5 }}
-          className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0"
-        >
+        <div className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0">
           <img
             src="/images/ScogliRossi_2.webp"
             alt="Sardegna"
+            width="1600"
+            height="900"
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -49,12 +46,7 @@ export default function Main_IceStoneService_Split() {
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
           <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 py-10 text-center md:justify-center md:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-md"
-            >
+            <div className="w-full max-w-md">
               <div className="mb-4 inline-flex max-w-full rounded-full border border-cyan-300/30 bg-black/35 px-4 py-2.5 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm md:mb-5 md:px-6 md:py-3">
                 <p className="text-base font-bold uppercase leading-tight tracking-[0.18em] text-cyan-200 sm:text-xl md:text-4xl md:tracking-[0.35em] [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
                   Sardegna
@@ -69,20 +61,17 @@ export default function Main_IceStoneService_Split() {
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition duration-1000 group-hover/button:translate-x-full"></span>
                 <span className="relative z-10">ENTRA</span>
               </button>
-            </motion.div>
+            </div>
           </div>
-
-        </motion.div>
+        </div>
 
         {/* Mantova, Modena e Reggio Emilia */}
-        <motion.div
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.5 }}
-          className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0"
-        >
+        <div className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0">
           <img
             src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop"
             alt="Mantova, Modena e Reggio Emilia"
+            width="1600"
+            height="900"
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -96,12 +85,7 @@ export default function Main_IceStoneService_Split() {
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_center,rgba(103,232,249,0.18),transparent_60%)]"></div>
 
           <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 py-10 text-center md:justify-center md:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2 }}
-              className="w-full max-w-md"
-            >
+            <div className="w-full max-w-md">
               <div className="mb-4 inline-flex max-w-full rounded-full border border-cyan-300/30 bg-black/35 px-4 py-2.5 shadow-[0_0_30px_rgba(103,232,249,0.12)] backdrop-blur-sm md:mb-5 md:px-6 md:py-3">
                 <p className="text-base font-bold uppercase leading-tight tracking-[0.1em] text-cyan-200 sm:text-xl sm:tracking-[0.18em] md:text-4xl md:tracking-[0.35em] [text-shadow:0_0_18px_rgba(103,232,249,0.35)]">
                   <span className="md:hidden">
@@ -121,10 +105,10 @@ export default function Main_IceStoneService_Split() {
                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent transition duration-1000 group-hover/button:translate-x-full"></span>
                 <span className="relative z-10">ENTRA</span>
               </button>
-            </motion.div>
+            </div>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </main>
 
       {/* Floating Ice Glow */}
       <div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-cyan-400/10 blur-3xl"></div>
@@ -142,5 +126,5 @@ export default function Main_IceStoneService_Split() {
         <div className="absolute left-[80%] top-[15%] h-2 w-2 animate-pulse rounded-full bg-cyan-200/30 blur-[1px]"></div>
       </div>
     </div>
-  );
+  )
 }

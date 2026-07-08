@@ -84,6 +84,8 @@ export default function Main_IceStoneService_Italia() {
               <img 
                 src="/images/Logo_icestone.webp" 
                 alt="IceStone Service Logo" 
+                width="512"
+                height="512"
                 decoding="async"
                 className="h-12 md:h-16 object-contain"
               />
@@ -95,11 +97,14 @@ export default function Main_IceStoneService_Italia() {
         </div>
       </header>
 
+      <main>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <img
           src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1600&auto=format&fit=crop"
           alt="Ice"
+          width="1600"
+          height="900"
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -174,6 +179,7 @@ export default function Main_IceStoneService_Italia() {
           </Link>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer
@@ -184,6 +190,8 @@ export default function Main_IceStoneService_Italia() {
             <img 
               src="/images/Logo_IceStoneService_Rettangolare.webp" 
               alt="IceStone Service Logo" 
+              width="1200"
+              height="350"
               loading="lazy"
               decoding="async"
               className="h-10 md:h-12 object-contain scale-125 md:scale-150 origin-left"
@@ -200,6 +208,8 @@ export default function Main_IceStoneService_Italia() {
               <img
                 src="/images/Button-Instagram.webp"
                 alt=""
+                width="64"
+                height="64"
                 loading="lazy"
                 decoding="async"
                 className="h-5 w-5 object-contain"
