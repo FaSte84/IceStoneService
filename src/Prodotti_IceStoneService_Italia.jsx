@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 export default function Prodotti_IceStoneService_Italia() {
   const [menuOpen, setMenuOpen] = useState(false)
   const cubettiSlides = [
-    '/images/Prodotti_Italia/Cocktail_Icestone.webp',
-    '/images/Prodotti_Italia/GhiaccioCubettiSoli.webp',
+    '/images/Cocktail_Icestone.webp',
+    '/images/GhiaccioCubettiSoli.webp',
   ]
   const [cubettiSlideIndex, setCubettiSlideIndex] = useState(0)
   const lastraSlides = [
-    '/images/Prodotti_Italia/LastraCampari.webp',
-    '/images/Prodotti_Italia/LastraCampariAlto.webp',
-    '/images/Prodotti_Italia/LastraCampariLato.webp',
+    '/images/LastraCampari.webp',
+    '/images/LastraCampariAlto.webp',
+    '/images/LastraCampariLato.webp',
   ]
   const [lastraSlideIndex, setLastraSlideIndex] = useState(0)
 
@@ -35,7 +35,7 @@ export default function Prodotti_IceStoneService_Italia() {
     {
       title: 'Ice Cubes Premium',
       size: '2 KG',
-      image: '/images/Prodotti_Italia/Ghiaccio quadrato.jpg',
+      image: '/images/Ghiaccio quadrato.jpg',
     },
     {
       title: 'Ghiaccio Cubetti',

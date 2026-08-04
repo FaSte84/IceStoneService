@@ -6,7 +6,7 @@ export default function Servizi_IceStoneService_Sardegna() {
   const services = [
     {
       title: "Comodato d'Uso di Contenitori Isotermici",
-      image: '/images/Servizi_Italia/Contenitore_isotermico-removebg.webp',
+      image: '/images/Contenitore_isotermico-removebg.webp',
       imageWrapperClassName: 'px-2 py-2',
       imageClassName: 'h-60 md:h-72',
       text:
@@ -14,14 +14,15 @@ export default function Servizi_IceStoneService_Sardegna() {
     },
     {
       title: 'Noleggio di Furgoni Frigoriferi',
-      cardClassName: 'border-cyan-300/25 bg-cyan-400/[0.04]',
-      iconClassName: 'text-cyan-300',
+      image: '/images/Ice_Stone_Furgone-removebg.webp',
+      imageWrapperClassName: 'px-1 py-1 md:px-2 md:py-2',
+      imageClassName: 'h-auto w-full max-w-[24rem] md:max-w-[28rem]',
       text:
         'Offriamo il noleggio di furgoni frigoriferi per esigenze di trasporto e stoccaggio temporaneo. Un servizio pensato per aziende, eventi e attivita commerciali che necessitano di mantenere la catena del freddo senza interruzioni.',
     },
     {
       title: 'Noleggio Congelatori a Pozzetto',
-      image: '/images/Servizi_Italia/Congelatore_Pozzetto-removebg.webp',
+      image: '/images/Congelatore_Pozzetto-removebg.webp',
       imageWrapperClassName: 'px-2 py-2',
       imageClassName: 'h-72 md:h-80',
       text:

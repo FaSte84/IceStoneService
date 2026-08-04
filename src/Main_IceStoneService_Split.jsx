@@ -12,6 +12,8 @@ export default function Main_IceStoneService_Split() {
             <img 
               src="/images/Logo_icestone.webp"
               alt="IceStone Service Logo" 
+              width="512"
+              height="512"
               decoding="async"
               className="h-12 md:h-16 object-contain"
             />
@@ -30,9 +32,11 @@ export default function Main_IceStoneService_Split() {
         <div className="group relative min-h-[calc(50vh-2.5rem)] flex-1 overflow-hidden cursor-pointer transition-all duration-700 hover:flex-[1.15] md:min-h-0">
           <img
             src="/images/ScogliRossi_2.webp"
+            srcSet="/images/ScogliRossi_2-450.webp 450w, /images/ScogliRossi_2.webp 900w"
+            sizes="(min-width: 768px) 50vw, 100vw"
             alt="Sardegna"
-            width="1600"
-            height="900"
+            width="900"
+            height="561"
             loading="eager"
             fetchPriority="high"
             decoding="async"

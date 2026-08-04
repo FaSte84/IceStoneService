@@ -34,7 +34,7 @@ function setLinkRel(rel, href) {
   link.setAttribute('href', href)
 }
 
-const SITE_URL = 'https://icestoneservice.it'
+const SITE_URL = 'https://www.icestoneservice.it'
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/Logo_icestone.png`
 const DEFAULT_TITLE = 'Ice Stone Service - Ghiaccio Professionale'
 const DEFAULT_DESCRIPTION =
