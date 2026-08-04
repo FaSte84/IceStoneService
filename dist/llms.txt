@@ -1,0 +1,52 @@
+# Ice Stone Service
+
+> Ice Stone Service provides professional ice production, packaging, and delivery for bars, events, businesses, and private customers in Sardinia and in Mantova, Modena, and Reggio Emilia.
+
+Ice Stone Service is an Italian ice supplier focused on fast delivery, event support, and cold-chain services. The website is primarily in Italian and includes separate routes for Sardinia and for Mantova, Modena, and Reggio Emilia.
+
+- [Full LLM Guide](https://icestoneservice.it/llms-full.txt): Extended machine-readable guide with more detail about routes, services, products, and contact flows.
+
+## Core Pages
+
+- [Home](https://icestoneservice.it/): Area selection landing page for Sardinia and mainland Italy service areas.
+- [Home Italia](https://icestoneservice.it/home-italia): Main homepage for Mantova, Modena, and Reggio Emilia.
+- [Home Sardegna](https://icestoneservice.it/home-sardegna): Main homepage for Sardinia.
+
+## Products
+
+- [Prodotti Italia](https://icestoneservice.it/prodotti): Product catalog for Mantova, Modena, and Reggio Emilia.
+- [Prodotti Sardegna](https://icestoneservice.it/prodotti-sardegna): Product catalog for Sardinia.
+
+## Services
+
+- [Servizi Italia](https://icestoneservice.it/servizi): Ice-related services for Mantova, Modena, and Reggio Emilia.
+- [Servizi Sardegna](https://icestoneservice.it/servizi-sardegna): Ice-related services for Sardinia.
+
+## Events
+
+- [Eventi Italia](https://icestoneservice.it/eventi): Event ice supply information for mainland Italy service areas.
+- [Eventi Sardegna](https://icestoneservice.it/eventi-sardegna): Event ice supply information for Sardinia.
+
+## Company
+
+- [Chi Siamo Italia](https://icestoneservice.it/chi-siamo): Company profile for Mantova, Modena, and Reggio Emilia.
+- [Chi Siamo Sardegna](https://icestoneservice.it/chi-siamo-sardegna): Company profile for Sardinia.
+
+## Contact
+
+- [Contatti Italia](https://icestoneservice.it/contatti): Contact page for Mantova, Modena, and Reggio Emilia.
+- [Contatti Sardegna](https://icestoneservice.it/contatti-sardegna): Contact page for Sardinia.
+
+Primary phone numbers:
+
+- Italy: +39 353 463 2562
+- Sardinia: +39 377 089 0066
+
+## Legal
+
+- [Privacy Policy](https://icestoneservice.it/privacy): Privacy and personal data information.
+
+## Optional
+
+- [Instagram Italia](https://www.instagram.com/icestone2.0/): Mainland Italy Instagram profile.
+- [Instagram Sardegna](https://www.instagram.com/icestone_service?igsh=dDQycDBoZGw5dmU%3D): Sardinia Instagram profile.

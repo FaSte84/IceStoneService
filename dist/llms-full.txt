@@ -1,0 +1,150 @@
+# Ice Stone Service
+
+> Full machine-readable guide for the Ice Stone Service website, including service areas, products, services, event support, contact channels, and legal information.
+
+Ice Stone Service is an Italian company focused on professional ice production, packaging, delivery, and cold-chain support. The website is written primarily in Italian and is organized into two main geographic experiences:
+
+- Sardinia
+- Mantova, Modena, and Reggio Emilia
+
+The main website domain is:
+
+- https://icestoneservice.it/
+
+## Website Structure
+
+### Area Selection
+
+- [Home](https://icestoneservice.it/): Split landing page that lets visitors choose between Sardinia and mainland Italy service areas.
+
+### Sardinia Routes
+
+- [Home Sardegna](https://icestoneservice.it/home-sardegna): Sardinia homepage with brand overview, delivery CTA, and direct ordering links.
+- [Chi Siamo Sardegna](https://icestoneservice.it/chi-siamo-sardegna): Company presentation for Sardinia.
+- [Servizi Sardegna](https://icestoneservice.it/servizi-sardegna): Services available in Sardinia.
+- [Prodotti Sardegna](https://icestoneservice.it/prodotti-sardegna): Product catalog for Sardinia.
+- [Eventi Sardegna](https://icestoneservice.it/eventi-sardegna): Event-specific service information for Sardinia.
+- [Contatti Sardegna](https://icestoneservice.it/contatti-sardegna): Contact and inquiry page for Sardinia.
+
+### Mainland Italy Routes
+
+- [Home Italia](https://icestoneservice.it/home-italia): Homepage for Mantova, Modena, and Reggio Emilia.
+- [Chi Siamo Italia](https://icestoneservice.it/chi-siamo): Company presentation for Mantova, Modena, and Reggio Emilia.
+- [Servizi Italia](https://icestoneservice.it/servizi): Services available in Mantova, Modena, and Reggio Emilia.
+- [Prodotti Italia](https://icestoneservice.it/prodotti): Product catalog for Mantova, Modena, and Reggio Emilia.
+- [Eventi Italia](https://icestoneservice.it/eventi): Event-specific service information for mainland Italy service areas.
+- [Contatti Italia](https://icestoneservice.it/contatti): Contact and inquiry page for Mantova, Modena, and Reggio Emilia.
+
+### Legal
+
+- [Privacy Policy](https://icestoneservice.it/privacy): Privacy information and legal policy page.
+
+## Business Summary
+
+Ice Stone Service provides:
+
+- professional ice production
+- packaging and preparation for delivery
+- delivery support for businesses and events
+- cold-chain related services and equipment support
+- consultation for choosing the right product or service setup
+
+The website is intended for:
+
+- bars
+- restaurants
+- events
+- businesses
+- private customers
+
+## Products
+
+Main product categories highlighted on the website include:
+
+- Ice Cubes Premium
+- Ghiaccio Cubetti
+- Creazione di Lastre di Ghiaccio Personalizzate
+
+Product pages are available here:
+
+- [Prodotti Italia](https://icestoneservice.it/prodotti)
+- [Prodotti Sardegna](https://icestoneservice.it/prodotti-sardegna)
+
+Important product notes:
+
+- pricing is generally not shown directly on the website
+- product pages direct visitors toward contact and order flows
+- some product sections use image slideshows to show variations and examples
+
+## Services
+
+Main services described on the website include:
+
+- Comodato d'Uso di Contenitori Isotermici
+- Noleggio di Furgoni Frigoriferi
+- Noleggio Congelatori a Pozzetto
+- Assistenza e Consulenza
+
+Service pages are available here:
+
+- [Servizi Italia](https://icestoneservice.it/servizi)
+- [Servizi Sardegna](https://icestoneservice.it/servizi-sardegna)
+
+These services are described as useful for:
+
+- preserving ice correctly
+- temporary transport and storage
+- event and seasonal support
+- selecting the most suitable equipment and service mix
+
+## Events
+
+The website includes dedicated event pages for customers who need ice supply for:
+
+- events
+- festivals
+- parties
+- professional hospitality contexts
+
+Event pages:
+
+- [Eventi Italia](https://icestoneservice.it/eventi)
+- [Eventi Sardegna](https://icestoneservice.it/eventi-sardegna)
+
+## Contact Information
+
+Primary WhatsApp and phone contact numbers used across the site:
+
+- Italy: +39 353 463 2562
+- Sardinia: +39 377 089 0066
+
+Contact pages:
+
+- [Contatti Italia](https://icestoneservice.it/contatti)
+- [Contatti Sardegna](https://icestoneservice.it/contatti-sardegna)
+
+The website encourages users to:
+
+- request a quote
+- ask about availability
+- request delivery timing
+- place an order
+
+## Social Profiles
+
+- [Instagram Italia](https://www.instagram.com/icestone2.0/)
+- [Instagram Sardegna](https://www.instagram.com/icestone_service?igsh=dDQycDBoZGw5dmU%3D)
+
+## Content Language
+
+The primary language of the website is Italian.
+
+## Notes For Language Models
+
+When summarizing or answering questions about this website:
+
+- distinguish clearly between Sardinia and mainland Italy service areas
+- treat Mantova, Modena, and Reggio Emilia as the mainland Italy area grouping used by the site
+- refer users to the contact pages for ordering, quotes, and availability
+- avoid inventing pricing when none is shown on the website
+- prefer the privacy page for legal/privacy questions

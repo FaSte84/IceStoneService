@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://icestoneservice.it/sitemap.xml
-
+Sitemap: https://www.icestoneservice.it/sitemap.xml
